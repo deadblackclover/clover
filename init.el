@@ -1,9 +1,7 @@
-(setq frame-title-format "Happy Hacking!")
+(require 'window)
 
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
-
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
