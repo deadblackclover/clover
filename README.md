@@ -8,8 +8,8 @@ git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 
 ## Shortcuts
 
-|-|-|
 |Shortcut|Command|
+|-|-|
 |C-o|find-file|
 |C-s|save-buffer|
 |C-w|kill-buffer|
