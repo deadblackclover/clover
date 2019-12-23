@@ -16,4 +16,12 @@
 ;; Buffer
 (global-set-key (kbd "<C-tab>") 'switch-to-buffer)
 
+;; New scratch
+(defun new-scratch ()
+    ; Creates a new *scratch* buffer
+    (interactive)
+    (switch-to-buffer (get-buffer-create "*scratch*")))
+
+(global-set-key (kbd "C-n") 'new-scratch)
+
 (provide 'keyboard)
