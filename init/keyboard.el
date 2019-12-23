@@ -11,12 +11,9 @@
 (cua-mode 1)
 
 ;; Select Text
-(global-set-key (kbd "C-a") 'mark-whole-buffer) ;; Paste
+(global-set-key (kbd "C-a") 'mark-whole-buffer)
 
 ;; Buffer
 (global-set-key (kbd "<C-tab>") 'switch-to-buffer)
-
-;; Find
-
 
 (provide 'keyboard)
