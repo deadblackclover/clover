@@ -18,4 +18,4 @@ git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 |C-x|kill-region|
 |C-v|yank|
 |C-a|mark-whole-buffer|
-|<C-tab>|switch-to-buffer|
+|\<C-tab\>|switch-to-buffer|
