@@ -5,6 +5,10 @@
 (setq make-backup-files nil) ; stop creating backup~ files
 (setq auto-save-default nil) ; stop creating #autosave# files
 
+(display-battery-mode 1) ;; battery status
+
+(global-linum-mode t) ;; global line mode
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
