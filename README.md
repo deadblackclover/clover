@@ -1,9 +1,9 @@
-# emacs.d
+# Clover Emacs
 Emacs Configuration Kit
 
 ## Installation
 ```
-git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
+cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 ```
 
 ## Shortcuts
