@@ -40,3 +40,4 @@ cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 |C-v|yank|
 |C-a|mark-whole-buffer|
 |\<C-tab\>|switch-to-buffer|
+|C-n|new-scratch|
