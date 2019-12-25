@@ -21,9 +21,8 @@
                             ░                      
 ```
 
-Emacs Configuration Kit
-
 ## Installation
+
 ```
 cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 ```
