@@ -1,6 +1,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'window)
 (require 'keyboard)
+(require 'clover-buffer)
 
 ;; Added package archives
 (require 'package)
