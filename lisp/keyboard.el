@@ -1,3 +1,8 @@
+;;; init.el
+;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
+;;; licensed under the GNU General Public License version 3 or later. See
+;;; the LICENSE file.
+
 ;; File
 (global-set-key (kbd "C-o") 'find-file)
 (global-set-key (kbd "C-s") 'save-buffer)
