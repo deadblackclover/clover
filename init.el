@@ -1,12 +1,13 @@
+;;; init.el
+;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
+;;; licensed under the GNU General Public License version 3 or later. See
+;;; the LICENSE file.
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'window)
 (require 'keyboard)
 (require 'clover-buffer)
-
-;; Added package archives
-(require 'package)
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(require 'auto-install-packages)
 
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
@@ -15,14 +16,5 @@
 (global-linum-mode t) ;; global line mode
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(custom-set-faces)
