@@ -1,4 +1,4 @@
-;;; init.el
+;;; clover-buffer.el
 ;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
