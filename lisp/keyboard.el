@@ -19,11 +19,21 @@
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
 ;; New scratch
-(defun new-scratch ()
+(defun clover/new-scratch ()
     ; Creates a new *scratch* buffer
     (interactive)
     (switch-to-buffer (get-buffer-create "*scratch*")))
 
-(global-set-key (kbd "C-n") 'new-scratch)
+(global-set-key (kbd "C-n") 'clover/new-scratch)
+
+
+;; New scratch org mode
+(defun clover/new-scratch-org-mode ()
+    ; Creates a new *scratch* buffer
+    (interactive)
+    (switch-to-buffer (get-buffer-create "*scratch org-mode*"))
+    (org-mode))
+
+(global-set-key (kbd "M-n") 'clover/new-scratch-org-mode)
 
 (provide 'keyboard)
