@@ -34,7 +34,7 @@ cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 
 ## Shortcuts
 
-|Shortcut|Command|
+|Shortcut (C-Ctrl, M-Alt)|Command|
 |-|-|
 |C-o|find-file|
 |C-s|save-buffer|
