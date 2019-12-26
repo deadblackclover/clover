@@ -18,9 +18,6 @@
 ;; Select Text
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
-;; Buffer
-(global-set-key (kbd "<C-tab>") 'switch-to-buffer)
-
 ;; New scratch
 (defun new-scratch ()
     ; Creates a new *scratch* buffer
