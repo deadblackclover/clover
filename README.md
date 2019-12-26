@@ -44,4 +44,5 @@ cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
 |C-x|kill-region|
 |C-v|yank|
 |C-a|mark-whole-buffer|
-|C-n|new-scratch|
+|C-n|clover/new-scratch|
+|M-n|clover/new-scratch-org-mode|
