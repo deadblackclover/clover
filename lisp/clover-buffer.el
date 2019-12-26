@@ -6,7 +6,7 @@
 (setq inhibit-startup-message t)
 
 (setq text "
-                                                            
+
  @@@@@@@  @@@        @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   
 @@@@@@@@  @@@       @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  
 !@@       @@!       @@!  @@@  @@!  @@@  @@!       @@!  @@@  
@@ -29,10 +29,14 @@
 :!:       :!:     :!:  :!:  !:!  :!:           !:!          
  :: ::::  :::     ::   ::   :::   ::: :::  :::: ::          
 : :: ::    :      :     :   : :   :: :: :  :: : :           
-                                                            
+
+[[https://github.com/deadblackclover/emacs.d][Source code]]
+[[https://github.com/deadblackclover][DEADBLACKCLOVER]]
+[[https://github.com/deadblackclover/emacs.d/blob/master/LICENSE][GNU GPL-3.0]]
 ")
 
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert text)
+(org-mode)
 
 (provide 'clover-buffer)
