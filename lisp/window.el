@@ -5,6 +5,9 @@
 
 (setq frame-title-format (format "%s - Happy Hacking! - Clover Emacs v%s" (buffer-name) emacs-version))
 
+(if window-system
+    (tool-bar-mode -1))
+
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (display-battery-mode 1) ;; battery status
