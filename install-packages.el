@@ -13,8 +13,9 @@
 
 (setq clover-packages-list
       '(
-	cyberpunk-theme
 	clojure-mode
+	cyberpunk-theme
+	elpher
 	scala-mode
 	))
 
