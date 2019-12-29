@@ -12,6 +12,9 @@
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
 
+(add-hook 'after-init-hook
+	  (lambda () (load-theme 'cyberpunk t)))
+
 (custom-set-variables
- '(custom-enabled-themes (quote (misterioso))))
+ '(custom-enabled-themes (quote (cyberpunk))))
 (custom-set-faces)
