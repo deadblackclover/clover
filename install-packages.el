@@ -16,6 +16,7 @@
 	clojure-mode
 	cyberpunk-theme
 	elpher
+	mastodon
 	scala-mode
 	))
 
