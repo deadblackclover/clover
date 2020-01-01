@@ -16,7 +16,10 @@
 	clojure-mode
 	cyberpunk-theme
 	elpher
+	js2-mode
 	mastodon
+	php-mode
+	python-mode
 	scala-mode
 	))
 
