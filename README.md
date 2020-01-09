@@ -1,3 +1,4 @@
+![GNU Emacs](https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=plastic)
 ```
 
  @@@@@@@  @@@        @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   
