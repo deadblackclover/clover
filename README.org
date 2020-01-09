@@ -1,5 +1,6 @@
-![GNU Emacs](https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=plastic)
-```
+[[https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=plastic]]
+
+#+BEGIN_SRC shell
 
  @@@@@@@  @@@        @@@@@@   @@@  @@@  @@@@@@@@  @@@@@@@   
 @@@@@@@@  @@@       @@@@@@@@  @@@  @@@  @@@@@@@@  @@@@@@@@  
@@ -23,27 +24,28 @@
 :!:       :!:     :!:  :!:  !:!  :!:           !:!          
  :: ::::  :::     ::   ::   :::   ::: :::  :::: ::          
 : :: ::    :      :     :   : :   :: :: :  :: : :           
-                                                            
-                                                            
-```
+                                                                                                                       
+#+END_SRC
 
-## Installation
+** Installation
 
-```
+#+BEGIN_SRC shell
 cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
-```
+#+END_SRC
 
-## Shortcuts
+** Shortcuts
 
-|Shortcut (C-Ctrl, M-Alt)|Command|
-|-|-|
-|C-o|find-file|
-|C-s|save-buffer|
-|C-w|kill-buffer|
-|C-z|undo|
-|C-c|kill-ring-save|
-|C-x|kill-region|
-|C-v|yank|
-|C-a|mark-whole-buffer|
-|C-n|clover/new-scratch|
-|M-n|clover/new-scratch-org-mode|
+|------------------------+---------------------------|
+|Shortcut (C-Ctrl, M-Alt)|Command                    |
+|------------------------+---------------------------|
+|C-o                     |find-file                  |
+|C-s                     |save-buffer                |
+|C-w                     |kill-buffer                |
+|C-z                     |undo                       |
+|C-c                     |kill-ring-save             |
+|C-x                     |kill-region                |
+|C-v                     |yank                       |
+|C-a                     |mark-whole-buffer          |
+|C-n                     |clover/new-scratch         |
+|M-n                     |clover/new-scratch-org-mode|
+|------------------------+---------------------------|
