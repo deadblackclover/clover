@@ -6,7 +6,7 @@
 (require 'cl)
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (setq package-enable-at-startup nil)
 (package-initialize)
@@ -20,6 +20,7 @@
 	mastodon
 	php-mode
 	python-mode
+	racket-mode
 	scala-mode
 	telega
 	))
