@@ -21,6 +21,7 @@
 	php-mode
 	python-mode
 	scala-mode
+	telega
 	))
 
 (defun clover-auto-install-packages ()
