@@ -21,6 +21,7 @@
 	php-mode
 	python-mode
 	racket-mode
+	rust-mode
 	scala-mode
 	telega
 	))
