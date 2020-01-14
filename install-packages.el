@@ -16,6 +16,7 @@
 	clojure-mode
 	cyberpunk-theme
 	elpher
+	epresent
 	js2-mode
 	mastodon
 	php-mode
