@@ -36,4 +36,9 @@
 
 (global-set-key (kbd "M-n") 'clover/new-scratch-org-mode)
 
+;; racket-run
+(add-hook 'racket-mode-hook
+	  (lambda ()
+	    (define-key racket-mode-map (kbd "C-r") 'racket-run)))
+
 (provide 'keyboard)
