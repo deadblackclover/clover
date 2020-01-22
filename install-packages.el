@@ -19,6 +19,7 @@
 	epresent
 	js2-mode
 	mastodon
+	paredit
 	php-mode
 	python-mode
 	racket-mode
