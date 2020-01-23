@@ -23,6 +23,7 @@
 	php-mode
 	python-mode
 	racket-mode
+	rainbow-delimiters
 	rust-mode
 	scala-mode
 	telega
