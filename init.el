@@ -19,11 +19,18 @@
   "Turn on pseudo-structural editing of Lisp code."
   t)
 
+;; Paredit mode
 (add-hook 'emacs-lisp-mode-hook       'enable-paredit-mode)
 (add-hook 'lisp-mode-hook             'enable-paredit-mode)
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           'enable-paredit-mode)
 (add-hook 'racket-mode-hook           'enable-paredit-mode)
+
+;; Rainbow parentheses
++(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
++(add-hook 'lisp-mode-hook       'rainbow-delimiters-mode)
++(add-hook 'scheme-mode-hook     'rainbow-delimiters-mode)
++(add-hook 'racket-mode-hook     'rainbow-delimiters-mode)
 
 (custom-set-variables
  '(custom-enabled-themes (quote (cyberpunk))))
