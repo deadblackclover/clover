@@ -12,5 +12,6 @@
 
 (display-battery-mode 1) ;; battery status
 (global-linum-mode t) ;; global line mode
+(display-time-mode 1) ;; display time
 
 (provide 'window)
