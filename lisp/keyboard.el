@@ -41,4 +41,10 @@
 	  (lambda ()
 	    (define-key racket-mode-map (kbd "C-r") 'racket-run)))
 
+(defun clover/new-racket ()
+  (interactive)
+  (switch-to-buffer (get-buffer-create "untitled"))
+  (setq initial-major-mode (quote racket-mode))
+  (funcall initial-major-mode))
+
 (provide 'keyboard)
