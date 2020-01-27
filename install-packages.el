@@ -12,8 +12,7 @@
 (package-initialize)
 
 (setq clover-packages-list
-      '(
-	clojure-mode
+      '(clojure-mode
 	cyberpunk-theme
 	elpher
 	epresent
