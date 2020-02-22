@@ -14,6 +14,7 @@
 (setq clover-packages-list
       '(clojure-mode
 	cyberpunk-theme
+	elisp-format
 	elpher
 	epresent
 	js2-mode
