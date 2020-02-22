@@ -5,13 +5,12 @@
 
 (setq-default frame-title-format "%b - Happy Hacking! - Clover Emacs")
 
-(if window-system
-    (tool-bar-mode -1))
+(if window-system (tool-bar-mode -1))
 
 ;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (display-battery-mode 1) ;; battery status
-(global-linum-mode t) ;; global line mode
-(display-time-mode 1) ;; display time
+(global-linum-mode t)	 ;; global line mode
+(display-time-mode 1)	 ;; display time
 
 (provide 'window)

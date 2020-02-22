@@ -12,12 +12,10 @@
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
 
-(add-hook 'after-init-hook
-	  (lambda () (load-theme 'cyberpunk t)))
+(add-hook 'after-init-hook (lambda () 
+			     (load-theme 'cyberpunk t)))
 
-(autoload 'enable-paredit-mode "paredit"
-  "Turn on pseudo-structural editing of Lisp code."
-  t)
+(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 
 ;; Paredit mode
 (add-hook 'emacs-lisp-mode-hook       'enable-paredit-mode)
@@ -32,6 +30,5 @@
 (add-hook 'scheme-mode-hook     'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook     'rainbow-delimiters-mode)
 
-(custom-set-variables
- '(custom-enabled-themes (quote (cyberpunk))))
+(custom-set-variables '(custom-enabled-themes (quote (cyberpunk))))
 (custom-set-faces)
