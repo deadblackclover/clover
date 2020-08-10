@@ -12,7 +12,8 @@
 (package-initialize)
 
 (setq clover-packages-list
-      '(clojure-mode
+      '(cargo
+	clojure-mode
 	cyberpunk-theme
 	elisp-format
 	elpher
