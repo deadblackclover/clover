@@ -31,6 +31,7 @@
 
 #+BEGIN_SRC shell
 cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
+cd ~/.emacs.d
 emacs -Q --script install-packages.el
 #+END_SRC
 
