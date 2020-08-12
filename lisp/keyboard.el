@@ -36,28 +36,4 @@
 
 (global-set-key (kbd "M-n") 'clover/new-scratch-org-mode)
 
-;; racket-run
-(add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "C-r") 'racket-run)))
-
-(defun clover/new-racket () 
-  (interactive) 
-  (switch-to-buffer (get-buffer-create "untitled")) 
-  (setq initial-major-mode (quote racket-mode)) 
-  (funcall initial-major-mode))
-
-;; elisp-format-buffer
-(add-hook 'emacs-lisp-mode-hook (lambda () 
-				  (define-key emacs-lisp-mode-map (kbd "C-i")
-				    'elisp-format-buffer)))
-
-(add-hook 'lisp-mode-hook (lambda () 
-			    (define-key lisp-mode-map (kbd "C-i") 'elisp-format-buffer)))
-
-(add-hook 'scheme-mode-hook (lambda () 
-			      (define-key scheme-mode-map (kbd "C-i") 'elisp-format-buffer)))
-
-(add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
-
 (provide 'keyboard)
