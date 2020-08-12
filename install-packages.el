@@ -20,6 +20,7 @@
 	epresent
 	js2-mode
 	mastodon
+	nyan-mode
 	paredit
 	php-mode
 	python-mode
