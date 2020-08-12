@@ -7,7 +7,7 @@
 
 (if window-system (tool-bar-mode -1))
 
-;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (display-battery-mode 1) ;; battery status
 (global-linum-mode t)	 ;; global line mode

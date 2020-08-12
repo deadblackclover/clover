@@ -39,5 +39,6 @@
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert text)
 (org-mode)
+(beginning-of-buffer)
 
 (provide 'clover-buffer)
