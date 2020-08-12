@@ -3,6 +3,8 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'window)
 (require 'keyboard)
@@ -29,6 +31,3 @@
 (add-hook 'lisp-mode-hook       'rainbow-delimiters-mode)
 (add-hook 'scheme-mode-hook     'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook     'rainbow-delimiters-mode)
-
-(custom-set-variables '(custom-enabled-themes (quote (cyberpunk))))
-(custom-set-faces)
