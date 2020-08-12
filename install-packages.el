@@ -20,6 +20,7 @@
 	epresent
 	js2-mode
 	mastodon
+	neotree
 	nyan-mode
 	paredit
 	php-mode
