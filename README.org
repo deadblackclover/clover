@@ -43,6 +43,7 @@ emacs -Q --script install-packages.el
 |C-o                     |find-file                  |
 |C-s                     |save-buffer                |
 |C-w                     |kill-buffer                |
+|C-f                     |isearch-forward            |
 |C-z                     |undo                       |
 |C-c                     |kill-ring-save             |
 |C-x                     |kill-region                |
