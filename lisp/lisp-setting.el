@@ -1,4 +1,4 @@
-;;; lisp-keyboard.el
+;;; lisp-setting.el
 ;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
@@ -26,4 +26,4 @@
 
 (add-hook 'racket-mode-hook (lambda () 
 			      (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
-(provide 'lisp-keyboard)
+(provide 'lisp-setting)
