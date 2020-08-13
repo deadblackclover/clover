@@ -15,6 +15,7 @@
       '(cargo
 	clojure-mode
 	cyberpunk-theme
+	disaster
 	elisp-format
 	elpher
 	epresent

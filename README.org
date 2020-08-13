@@ -53,4 +53,5 @@ emacs -Q --script install-packages.el
 |C-i                     |elisp-format-buffer        |
 |C-n                     |clover/new-scratch         |
 |M-n                     |clover/new-scratch-org-mode|
+|M-d                     |disassemble                |
 |------------------------+---------------------------|
