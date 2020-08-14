@@ -13,12 +13,12 @@
 
 (setq clover-packages-list
       '(cargo
-	clojure-mode
 	cyberpunk-theme
 	disaster
 	elisp-format
 	elpher
 	epresent
+	flycheck
 	js2-mode
 	mastodon
 	neotree
@@ -30,7 +30,6 @@
 	rainbow-delimiters
 	rust-mode
 	scala-mode
-	telega
 	))
 
 (defun clover-auto-install-packages ()
