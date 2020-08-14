@@ -1,4 +1,4 @@
-** Shortcuts
+* Shortcuts
 
 |------------------------+---------------------------|
 |Shortcut (C-Ctrl, M-Alt)|Command                    |
