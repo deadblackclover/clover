@@ -6,6 +6,22 @@
 (setq inhibit-startup-message t)
 
 (setq text "
+           88
+           88
+           88
+ ,adPPYba, 88  ,adPPYba,  8b       d8  ,adPPYba, 8b,dPPYba,
+a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
+8b         88 8b       d8  `8b   d8'  8PP''''''' 88
+'8a,   ,aa 88 '8a,   ,a8'   `8b,d8'   '8b,   ,aa 88
+ `'Ybbd8'' 88  `'YbbdP''      '8'      `'Ybbd8'' 88
+
+      _oOoOoOo_
+     (oOoOoOoOo)
+      )`-----`(
+     /         \\
+    |  v.0.1.0  |
+     \\         /
+     `=========`
 
 [[https://github.com/deadblackclover/emacs.d][Source code]]
 [[https://github.com/deadblackclover/emacs.d/releases][Releases]]
