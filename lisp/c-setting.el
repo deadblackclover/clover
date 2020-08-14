@@ -6,10 +6,10 @@
 (require 'disaster)
 
 ;; C
-(defun my-c-mode-hook () 
+(defun clover/c-mode-hook () 
   (c-set-style "k&r") 
   (c-basic-offset 4))
-(add-hook 'c-mode-hook 'my-c-mode-hook)
+(add-hook 'c-mode-hook 'clover/c-mode-hook)
 
 ;; Disassemble
 (add-hook 'c-mode-hook (lambda () 
