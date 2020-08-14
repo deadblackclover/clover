@@ -5,6 +5,8 @@
 
 (package-initialize)
 
+(setq clover/version "v0.1.0")
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'window)
 (require 'keyboard)
