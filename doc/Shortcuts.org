@@ -1,0 +1,20 @@
+** Shortcuts
+
+|------------------------+---------------------------|
+|Shortcut (C-Ctrl, M-Alt)|Command                    |
+|------------------------+---------------------------|
+|C-o                     |find-file                  |
+|C-s                     |save-buffer                |
+|C-w                     |kill-buffer                |
+|C-f                     |isearch-forward            |
+|C-z                     |undo                       |
+|C-c                     |kill-ring-save             |
+|C-x                     |kill-region                |
+|C-v                     |yank                       |
+|C-a                     |mark-whole-buffer          |
+|C-r                     |racket-run                 |
+|C-i                     |elisp-format-buffer        |
+|C-n                     |clover/new-scratch         |
+|M-n                     |clover/new-scratch-org-mode|
+|M-d                     |disassemble                |
+|------------------------+---------------------------|
