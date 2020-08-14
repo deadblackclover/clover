@@ -3,7 +3,7 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
-(setq-default frame-title-format "%b - Happy Hacking! - Clover Emacs")
+(setq-default frame-title-format (concat "%b - Happy Hacking! - Clover Emacs " clover/version))
 
 (if window-system (tool-bar-mode -1))
 
