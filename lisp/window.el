@@ -13,6 +13,8 @@
 (global-linum-mode t)	 ;; global line mode
 (display-time-mode 1)	 ;; display time
 
+(setq column-number-mode t)
+
 (nyan-mode) ;; Activate nyan-mode
 
 (neotree) ;; Activate neotree

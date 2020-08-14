@@ -17,4 +17,5 @@
 |C-n                     |clover/new-scratch         |
 |M-n                     |clover/new-scratch-org-mode|
 |M-d                     |disassemble                |
+|F8                      |neotree-toggle             |
 |------------------------+---------------------------|

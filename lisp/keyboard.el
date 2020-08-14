@@ -3,6 +3,8 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+(require 'neotree)
+
 ;; File
 (global-set-key (kbd "C-o") 'find-file)       ;; Open file
 (global-set-key (kbd "C-s") 'save-buffer)     ;; Save file
@@ -18,6 +20,9 @@
 
 ;; Select Text
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
+
+;; Neotree toggle
+(global-set-key [f8] 'neotree-toggle)
 
 ;; New scratch
 (defun clover/new-scratch () 
