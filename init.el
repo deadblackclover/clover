@@ -38,4 +38,5 @@
 (add-hook 'scheme-mode-hook     'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook     'rainbow-delimiters-mode)
 
+;; Activate flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)

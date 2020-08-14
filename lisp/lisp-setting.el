@@ -3,15 +3,15 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
-;; racket-run
-(add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "C-r") 'racket-run)))
-
 (defun clover/new-racket () 
   (interactive) 
   (switch-to-buffer (get-buffer-create "untitled")) 
   (setq initial-major-mode (quote racket-mode)) 
   (funcall initial-major-mode))
+
+;; racket-run
+(add-hook 'racket-mode-hook (lambda () 
+			      (define-key racket-mode-map (kbd "C-r") 'racket-run)))
 
 ;; elisp-format-buffer
 (add-hook 'emacs-lisp-mode-hook (lambda () 
