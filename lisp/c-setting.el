@@ -7,8 +7,8 @@
 
 ;; C
 (defun clover/c-mode-hook () 
-  (c-set-style "k&r") 
-  (c-basic-offset 4))
+  (setq c-set-style "k&r") 
+  (setq c-basic-offset 4))
 (add-hook 'c-mode-hook 'clover/c-mode-hook)
 
 ;; Disassemble
@@ -16,5 +16,8 @@
 			 (define-key c-mode-map (kbd "M-d") 'disaster)))
 
 ;; C++
+(defun clover/c++-mode-hook () 
+  (setq c-basic-offset 4))
+(add-hook 'c++-mode-hook 'clover/c++-mode-hook)
 
 (provide 'c-setting)
