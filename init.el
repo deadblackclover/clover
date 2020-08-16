@@ -8,9 +8,9 @@
 (setq clover/version "v0.1.0")
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(require 'clover-buffer)
 (require 'window)
 (require 'keyboard)
-(require 'clover-buffer)
 
 ;; Language setting
 (require 'lisp-setting)
