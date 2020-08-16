@@ -1,5 +1,6 @@
 * Clover Emacs
 
+[[https://img.shields.io/github/v/release/deadblackclover/emacs.d.svg]]
 [[https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=plastic]]
 
 Emacs for real hackers
