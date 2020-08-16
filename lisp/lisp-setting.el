@@ -5,7 +5,7 @@
 
 (defun clover/new-racket () 
   (interactive) 
-  (switch-to-buffer (get-buffer-create "untitled")) 
+  (switch-to-buffer (get-buffer-create "untitled.rkt")) 
   (setq initial-major-mode (quote racket-mode)) 
   (funcall initial-major-mode))
 
