@@ -15,6 +15,7 @@
 ;; Language setting
 (require 'lisp-setting)
 (require 'c-setting)
+(require 'rust-setting)
 
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
