@@ -13,7 +13,9 @@
 (global-linum-mode t)	 ;; global line mode
 (display-time-mode 1)	 ;; display time
 
-(setq column-number-mode t)
+(setq column-number-mode t) ;; Column and line
+
+(set-default 'truncate-lines t) ;; Truncate line
 
 (nyan-mode) ;; Activate nyan-mode
 
