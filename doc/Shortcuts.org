@@ -1,4 +1,4 @@
-* Shortcuts
+** Buffer
 
 |------------------------+---------------------------|
 |Shortcut (C-Ctrl, M-Alt)|Command                    |
@@ -12,10 +12,34 @@
 |C-x                     |kill-region                |
 |C-v                     |yank                       |
 |C-a                     |mark-whole-buffer          |
-|C-r                     |racket-run                 |
-|C-i                     |elisp-format-buffer        |
+|F8                      |neotree-toggle             |
+|C-x <LEFT>              |previous-buffer            |
+|C-x <RIGHT>             |next-buffer                |
+|------------------------+---------------------------|
+
+** Scratch
+
+|------------------------+---------------------------|
+|Shortcut (C-Ctrl, M-Alt)|Command                    |
+|------------------------+---------------------------|
 |C-n                     |clover/new-scratch         |
 |M-n                     |clover/new-scratch-org-mode|
-|M-d                     |disassemble                |
-|F8                      |neotree-toggle             |
+|------------------------+---------------------------|
+
+** Lisp
+
+|------------------------+---------------------------|
+|Shortcut (C-Ctrl, M-Alt)|Command                    |
+|------------------------+---------------------------|
+|F5                      |racket-run                 |
+|C-i                     |elisp-format-buffer        |
+|------------------------+---------------------------|
+
+** C/C++
+
+|------------------------+---------------------------|
+|Shortcut (C-Ctrl, M-Alt)|Command                    |
+|------------------------+---------------------------|
+|F5                      |compile                    |
+|M-d                     |disaster                   |
 |------------------------+---------------------------|
