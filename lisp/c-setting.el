@@ -50,6 +50,10 @@
 					(buffer-file-name) 
 					(file-name-base buffer-file-name)))))
 
+;; Disassemble
+(add-hook 'c++-mode-hook (lambda () 
+			   (define-key c++-mode-map (kbd "M-d") 'disaster)))
+
 ;; Compile and run
 (add-hook 'c++-mode-hook (lambda () 
 			   (define-key c++-mode-map (kbd "<f5>") 'compile)))

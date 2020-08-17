@@ -11,7 +11,7 @@
 
 ;; racket-run
 (add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "C-r") 'racket-run)))
+			      (define-key racket-mode-map (kbd "<f5>") 'racket-run)))
 
 ;; elisp-format-buffer
 (add-hook 'emacs-lisp-mode-hook (lambda () 
