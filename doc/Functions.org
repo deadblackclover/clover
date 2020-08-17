@@ -1,0 +1,9 @@
+|---------------------------+---------------------------|
+|Name                       |Comment                    |
+|---------------------------+---------------------------|
+|clover/new-c               |Create a C file            |
+|clover/new-c++             |Create a C++ file          |
+|clover/new-racket          |Create a Racket file       |
+|clover/new-scratch         |Create a scratch           |
+|clover/new-scratch-org-mode|Create a Org scratch       |
+|---------------------------+---------------------------|
