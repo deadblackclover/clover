@@ -13,4 +13,6 @@ cd ~/.emacs.d
 ./install.sh
 #+END_SRC
 
-*** [[doc/Shortcuts.org][Shortcuts]]
+** Documentation
++ [[doc/Shortcuts.org][Shortcuts]]
++ [[doc/Functions.org][Functions]]
