@@ -41,4 +41,7 @@
 
 (global-set-key (kbd "M-n") 'clover/new-scratch-org-mode)
 
+;; Comment line
+(global-set-key (kbd "C-/") 'comment-line)
+
 (provide 'keyboard)

@@ -15,6 +15,16 @@
 |F8                      |neotree-toggle             |
 |C-x <LEFT>              |previous-buffer            |
 |C-x <RIGHT>             |next-buffer                |
+|C-x C-b                 |list-buffers               |
+|C-x b                   |switch-to-buffer           |
+|C-x C-c                 |save-buffers-kill-emacs    |
+|C-x 2                   |split-window-vertically    |
+|C-x 3                   |split-window-horizontally  |
+|C-x 0                   |delete-window              |
+|C-x o                   |other-window               |
+|M-u                     |upcase-word                |
+|M-l                     |downcase-word              |
+|C-/                     |comment-line               |
 |------------------------+---------------------------|
 
 ** Scratch
