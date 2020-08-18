@@ -3,6 +3,8 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+(require 'em-term)
+
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover Emacs " clover/version))
 
 (if window-system (tool-bar-mode -1))
@@ -20,5 +22,15 @@
 (nyan-mode) ;; Activate nyan-mode
 
 (neotree) ;; Activate neotree
+
+;; Eshell
+(add-to-list 'eshell-visual-commands "cmus")
+(add-to-list 'eshell-visual-commands "htop")
+(add-to-list 'eshell-visual-commands "ssh")
+(add-to-list 'eshell-visual-commands "tail")
+
+(add-to-list 'eshell-visual-commands "make")
+
+(add-to-list 'eshell-visual-commands "cargo")
 
 (provide 'window)
