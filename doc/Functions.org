@@ -1,6 +1,8 @@
 |---------------------------+---------------------------|
 |Name                       |Comment                    |
 |---------------------------+---------------------------|
+|clover/c-compile           |Compile C file             |
+|clover/c++-compile         |Compile C++ file           |
 |clover/new-c               |Create a C file            |
 |clover/new-c++             |Create a C++ file          |
 |clover/new-racket          |Create a Racket file       |
