@@ -6,6 +6,8 @@
 (setq inhibit-startup-message t)
 
 (setq logo "
+#+STARTUP: inlineimages
+[[~/.emacs.d/img/clover.png]] [[~/.emacs.d/img/key.png]]
            88
            88
            88
