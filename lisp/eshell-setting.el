@@ -9,9 +9,20 @@
 (add-to-list 'eshell-visual-commands "htop")
 (add-to-list 'eshell-visual-commands "ssh")
 (add-to-list 'eshell-visual-commands "tail")
+(add-to-list 'eshell-visual-commands "top")
+(add-to-list 'eshell-visual-commands "watch")
 
+;; C/C++
 (add-to-list 'eshell-visual-commands "make")
 
+;; Rust
 (add-to-list 'eshell-visual-commands "cargo")
+
+;; JS
+(add-to-list 'eshell-visual-commands "npm")
+(add-to-list 'eshell-visual-commands "yarn")
+
+;; Git
+(add-to-list 'eshell-visual-subcommands '("git" "diff" "help" "log" "show"))
 
 (provide 'eshell-setting)
