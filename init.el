@@ -17,6 +17,9 @@
 (require 'c-setting)
 (require 'rust-setting)
 
+;; Eshell
+(require 'eshell-setting)
+
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
