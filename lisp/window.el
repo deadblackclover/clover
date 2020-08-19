@@ -3,15 +3,19 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+(require 'reverse-im)
+
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover Emacs " clover/version))
 
 (if window-system (tool-bar-mode -1))
+(if window-system (menu-bar-mode -1))
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (display-battery-mode 1) ;; battery status
 (global-linum-mode t)	 ;; global line mode
 (display-time-mode 1)	 ;; display time
+(scroll-bar-mode -1)	 ;; disable scroll bars
 
 (setq column-number-mode t) ;; Column and line
 
@@ -20,5 +24,7 @@
 (nyan-mode) ;; Activate nyan-mode
 
 (neotree) ;; Activate neotree
+
+(reverse-im-activate "russian-computer") ;; Activate Reverse-im
 
 (provide 'window)

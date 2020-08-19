@@ -28,6 +28,7 @@
 	python-mode
 	racket-mode
 	rainbow-delimiters
+	reverse-im
 	rust-mode
 	scala-mode
 	))
