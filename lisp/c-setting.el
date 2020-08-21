@@ -34,6 +34,9 @@
 (add-hook 'c-mode-hook (lambda () 
 			 (define-key c-mode-map (kbd "<f5>") 'clover-c-compile)))
 
+;; Activate c-eldoc
+(add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
+
 ;; C++
 (defun clover-new-c++ () 
   "Create a C++ file" 
@@ -58,9 +61,11 @@
 		   (buffer-file-name) 
 		   (file-name-base buffer-file-name))))
 
-
 ;; Compile and run
 (add-hook 'c++-mode-hook (lambda () 
 			   (define-key c++-mode-map (kbd "<f5>") 'clover-c++-compile)))
+
+;; Activate c-eldoc
+(add-hook 'c++-mode-hook 'c-turn-on-eldoc-mode)
 
 (provide 'c-setting)

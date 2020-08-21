@@ -12,7 +12,8 @@
 (package-initialize)
 
 (setq clover-packages-list
-      '(cargo
+      '(c-eldoc
+	cargo
 	cyberpunk-theme
 	diff-hl
 	disaster
