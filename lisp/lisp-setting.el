@@ -27,4 +27,13 @@
 
 (add-hook 'racket-mode-hook (lambda () 
 			      (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
+
+;; ElDoc
+(add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'lisp-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'scheme-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'racket-mode-hook 'turn-on-eldoc-mode)
+
 (provide 'lisp-setting)
