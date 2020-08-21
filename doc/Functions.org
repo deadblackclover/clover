@@ -1,12 +1,12 @@
-|---------------------------+---------------------------|
-|Name                       |Comment                    |
-|---------------------------+---------------------------|
-|clover/c-compile           |Compile C file             |
-|clover/c++-compile         |Compile C++ file           |
-|clover/new-c               |Create a C file            |
-|clover/new-c++             |Create a C++ file          |
-|clover/new-racket          |Create a Racket file       |
-|clover/new-rust            |Create a Rust file         |
-|clover/new-scratch         |Create a scratch           |
-|clover/new-scratch-org-mode|Create a Org scratch       |
-|---------------------------+---------------------------|
+|---------------------------+------------------------------|
+|Name                       |Comment                       |
+|---------------------------+------------------------------|
+|clover-c-compile           |Compile C file                |
+|clover-c++-compile         |Compile C++ file              |
+|clover-new-c               |Create a C file               |
+|clover-new-c++             |Create a C++ file             |
+|clover-new-racket          |Create a Racket file          |
+|clover-new-rust            |Create a Rust file            |
+|clover-new-scratch         |Creates a new *scratch* buffer|
+|clover-new-scratch-org-mode|Creates a new *scratch* buffer|
+|---------------------------+------------------------------|
