@@ -14,6 +14,7 @@
 (setq clover-packages-list
       '(cargo
 	cyberpunk-theme
+	diff-hl
 	disaster
 	elisp-format
 	elpher

@@ -27,4 +27,6 @@
 
 (reverse-im-activate "russian-computer") ;; Activate Reverse-im
 
+(global-diff-hl-mode) ;; Activate diff-hl
+
 (provide 'window)
