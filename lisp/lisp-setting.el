@@ -3,7 +3,8 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
-(defun clover/new-racket () 
+(defun clover-new-racket () 
+  "Create a Racket file" 
   (interactive) 
   (switch-to-buffer (get-buffer-create "untitled.rkt")) 
   (setq initial-major-mode (quote racket-mode)) 

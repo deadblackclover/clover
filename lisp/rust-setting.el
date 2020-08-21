@@ -3,7 +3,8 @@
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
-(defun clover/new-rust () 
+(defun clover-new-rust () 
+  "Create a Rust file" 
   (interactive) 
   (switch-to-buffer (get-buffer-create "untitled.rs")) 
   (setq initial-major-mode (quote rust-mode)) 
