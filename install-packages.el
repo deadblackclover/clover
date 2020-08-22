@@ -27,6 +27,7 @@
 	nyan-mode
 	paredit
 	php-mode
+	plan9-theme
 	python-mode
 	racket-mode
 	rainbow-delimiters
