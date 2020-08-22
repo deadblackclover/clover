@@ -19,6 +19,8 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 ")
 
+(setq version (format "Clover: %s\nEmacs: v%s" clover-version emacs-version))
+
 (setq links "
 
 [[https://github.com/deadblackclover/emacs.d][Source code]]
@@ -30,7 +32,7 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert logo)
-(insert clover-version)
+(insert version)
 (insert links)
 (org-mode)
 (beginning-of-buffer)
