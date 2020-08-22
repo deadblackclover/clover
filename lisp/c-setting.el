@@ -37,6 +37,10 @@
 ;; Activate c-eldoc
 (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
 
+;;  Debugging
+(add-hook 'c-mode-hook (lambda () 
+			 (define-key c-mode-map (kbd "<C-f5>") 'gdb)))
+
 ;; C++
 (defun clover-new-c++ () 
   "Create a C++ file" 
@@ -67,5 +71,9 @@
 
 ;; Activate c-eldoc
 (add-hook 'c++-mode-hook 'c-turn-on-eldoc-mode)
+
+;;  Debugging
+(add-hook 'c++-mode-hook (lambda () 
+			   (define-key c++-mode-map (kbd "<C-f5>") 'gdb)))
 
 (provide 'c-setting)
