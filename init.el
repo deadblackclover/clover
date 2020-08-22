@@ -16,6 +16,7 @@
 (require 'lisp-setting)
 (require 'c-setting)
 (require 'rust-setting)
+(require 'python-setting)
 
 ;; Eshell
 (require 'eshell-setting)

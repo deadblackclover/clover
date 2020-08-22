@@ -28,6 +28,7 @@
 	paredit
 	php-mode
 	plan9-theme
+	py-autopep8
 	python-mode
 	racket-mode
 	rainbow-delimiters
