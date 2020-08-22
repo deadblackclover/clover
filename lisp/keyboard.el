@@ -44,4 +44,16 @@
 ;; Comment line
 (global-set-key (kbd "C-/") 'comment-line)
 
+;; EWW
+(global-set-key [f2] 'eww)
+
+;; ERC
+(global-set-key [f3] 'erc)
+
+;; Calculator
+(global-set-key [f4] 'calculator)
+
+;; htmlfontify-buffer
+(global-set-key [f6] 'htmlfontify-buffer)
+
 (provide 'keyboard)
