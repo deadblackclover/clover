@@ -14,6 +14,10 @@
 (add-hook 'racket-mode-hook (lambda () 
 			      (define-key racket-mode-map (kbd "<f5>") 'racket-run)))
 
+;; elisp run
+(add-hook 'emacs-lisp-mode-hook (lambda () 
+				  (define-key emacs-lisp-mode-map (kbd "<f5>") 'eval-buffer)))
+
 ;; elisp-format-buffer
 (add-hook 'emacs-lisp-mode-hook (lambda () 
 				  (define-key emacs-lisp-mode-map (kbd "C-i")
