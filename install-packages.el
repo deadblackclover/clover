@@ -25,6 +25,7 @@
 	mastodon
 	neotree
 	nyan-mode
+	package-lint
 	paredit
 	php-mode
 	plan9-theme
