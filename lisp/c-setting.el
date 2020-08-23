@@ -4,7 +4,6 @@
 ;;; the LICENSE file.
 
 ;;; Commentary:
-;;
 
 ;;; Code:
 (require 'disaster)

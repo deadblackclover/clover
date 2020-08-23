@@ -26,5 +26,4 @@
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 (provide 'python-setting)
-
 ;;; python-setting.el ends here
