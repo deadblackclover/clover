@@ -1,8 +1,11 @@
-;;; keyboard.el
+;;; keyboard.el --- Keyboard setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (require 'neotree)
 
 ;; File
@@ -26,7 +29,7 @@
 
 ;; New scratch
 (defun clover-new-scratch () 
-  "Creates a new *scratch* buffer" 
+  "Create a new *scratch* buffer." 
   (interactive) 
   (switch-to-buffer (get-buffer-create "*scratch*")))
 
@@ -34,7 +37,7 @@
 
 ;; New scratch org mode
 (defun clover-new-scratch-org-mode () 
-  "Creates a new *scratch* buffer" 
+  "Create a new *scratch* buffer." 
   (interactive) 
   (switch-to-buffer (get-buffer-create "*scratch org-mode*")) 
   (org-mode))
@@ -57,3 +60,4 @@
 (global-set-key [f6] 'htmlfontify-buffer)
 
 (provide 'keyboard)
+;;; keyboard.el ends here

@@ -1,10 +1,13 @@
-;;; lisp-setting.el
+;;; lisp-setting.el --- Lisp setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (defun clover-new-racket () 
-  "Create a Racket file" 
+  "Create a Racket file." 
   (interactive) 
   (switch-to-buffer (get-buffer-create "untitled.rkt")) 
   (setq initial-major-mode (quote racket-mode)) 
@@ -41,3 +44,4 @@
 (add-hook 'racket-mode-hook 'turn-on-eldoc-mode)
 
 (provide 'lisp-setting)
+;;; lisp-setting.el ends here

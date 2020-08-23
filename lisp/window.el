@@ -1,8 +1,11 @@
-;;; window.el
+;;; window.el --- Window setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (require 'reverse-im)
 
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover Emacs " clover-version))
@@ -30,3 +33,4 @@
 (global-diff-hl-mode) ;; Activate diff-hl
 
 (provide 'window)
+;;; window.el ends here

@@ -1,10 +1,14 @@
-;;; install-packages.el
+;;; install-packages.el --- Install packages
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (require 'cl)
 (require 'package)
+
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
@@ -39,6 +43,7 @@
 	))
 
 (defun clover-auto-install-packages ()
+  "Auto install packages."
   (package-refresh-contents)
   (mapc #'(lambda (package)
 	    (unless (package-installed-p package)
@@ -47,3 +52,6 @@
   (save-buffers-kill-emacs))
 
 (clover-auto-install-packages)
+
+(provide 'install-packages)
+;;; install-packages.el ends here

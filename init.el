@@ -1,13 +1,19 @@
-;;; init.el
+;;; init.el --- Init file
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (package-initialize)
 
 (setq clover-version "v0.1.2")
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+;; Language setting
+
 (require 'clover-buffer)
 (require 'window)
 (require 'keyboard)
@@ -45,3 +51,6 @@
 
 ;; Activate flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(provide 'init)
+;;; init.el ends here

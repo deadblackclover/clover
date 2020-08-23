@@ -1,8 +1,11 @@
-;;; eshell-setting.el
+;;; eshell-setting.el --- Eshell setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (require 'em-term)
 
 (add-to-list 'eshell-visual-commands "cmus")
@@ -26,3 +29,4 @@
 (add-to-list 'eshell-visual-subcommands '("git" "diff" "help" "log" "show"))
 
 (provide 'eshell-setting)
+;;; eshell-setting.el ends here

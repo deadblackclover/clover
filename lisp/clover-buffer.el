@@ -1,8 +1,11 @@
-;;; clover-buffer.el
+;;; clover-buffer.el --- Clover buffer
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
+;;; Commentary:
+
+;;; Code:
 (setq inhibit-startup-message t)
 
 (setq logo "
@@ -36,3 +39,4 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 (beginning-of-buffer)
 
 (provide 'clover-buffer)
+;;; clover-buffer.el ends here
