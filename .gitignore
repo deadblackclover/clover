@@ -2,5 +2,6 @@ url/
 elpa/
 eshell/
 request/
+transient/
 auto-save-list/
 mastodon.plstore

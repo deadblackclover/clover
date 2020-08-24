@@ -57,12 +57,13 @@
   (delete-directory (concat clover-path "elpa/") t)
   (delete-directory (concat clover-path "eshell/") t)
   (delete-directory (concat clover-path "request/") t)
+  (delete-directory (concat clover-path "transient/") t)
   (message "Done!"))
 
 (defun clover-pull-from-remote ()
   "Pulling from remote."
   (let ((default-directory clover-path))
-    (magit-pull)))
+    (vc-pull)))
 
 (defun clover-update ()
   "Update clover."
