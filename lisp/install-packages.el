@@ -71,7 +71,7 @@
   (clover-clear-folder)
   (clover-pull-from-remote)
   (clover-install-packages)
-  (message "Done!"))
+  (save-buffers-kill-emacs))
 
 (provide 'install-packages)
 ;;; install-packages.el ends here

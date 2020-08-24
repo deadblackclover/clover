@@ -11,7 +11,11 @@
 (setq clover-version "v0.1.2")
 (setq clover-path (file-name-directory (or load-file-name buffer-file-name)))
 
+(load (concat clover-path "init-packages"))
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+;; Install packages
+(require 'install-packages)
 
 ;; Language setting
 
