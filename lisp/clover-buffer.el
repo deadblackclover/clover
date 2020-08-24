@@ -9,8 +9,7 @@
 (setq inhibit-startup-message t)
 
 (setq logo "
-#+STARTUP: inlineimages
-[[~/.emacs.d/img/clover.png]] [[~/.emacs.d/img/key.png]]
+
            88
            88
            88
@@ -32,6 +31,8 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 ")
 
 (switch-to-buffer (get-buffer-create "*clover*"))
+(insert "#+STARTUP: inlineimages\n")
+(insert (format "[[%simg/clover.png]] [[%simg/key.png]]" clover-path clover-path))
 (insert logo)
 (insert (format "Clover: %s\nEmacs: v%s" clover-version emacs-version))
 (insert links)

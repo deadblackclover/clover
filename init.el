@@ -9,6 +9,7 @@
 (package-initialize)
 
 (setq clover-version "v0.1.2")
+(setq clover-path (file-name-directory (or load-file-name buffer-file-name)))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
