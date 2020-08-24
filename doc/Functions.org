@@ -3,6 +3,8 @@
 |---------------------------+------------------------------|
 |clover-c-compile           |Compile C file                |
 |clover-c++-compile         |Compile C++ file              |
+|clover-clear-folder        |Clears the Emacs folder       |
+|clover-install-packages    |Auto install packages         |
 |clover-new-c               |Create a C file               |
 |clover-new-c++             |Create a C++ file             |
 |clover-new-python          |Create a Python file          |
@@ -11,4 +13,5 @@
 |clover-new-scratch         |Creates a new *scratch* buffer|
 |clover-new-scratch-org-mode|Creates a new *scratch* buffer|
 |clover-python-run          |Run Python file               |
+|clover-update              |Update clover                 |
 |---------------------------+------------------------------|

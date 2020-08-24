@@ -13,7 +13,6 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (setq package-enable-at-startup nil)
-(package-initialize)
 
 (setq clover-packages-list
       '(c-eldoc
@@ -42,16 +41,36 @@
 	scala-mode
 	))
 
-(defun clover-auto-install-packages ()
+(defun clover-install-packages ()
   "Auto install packages."
+  (interactive)
   (package-refresh-contents)
   (mapc #'(lambda (package)
 	    (unless (package-installed-p package)
 	      (package-install package)))
-	clover-packages-list)
-  (save-buffers-kill-emacs))
+	clover-packages-list))
 
-(clover-auto-install-packages)
+(defun clover-clear-folder ()
+  "Clears the Emacs folder."
+  (interactive)
+  (delete-directory (concat clover-path "auto-save-list/") t)
+  (delete-directory (concat clover-path "elpa/") t)
+  (delete-directory (concat clover-path "eshell/") t)
+  (delete-directory (concat clover-path "request/") t)
+  (message "Done!"))
+
+(defun clover-pull-from-remote ()
+  "Pulling from remote."
+  (let ((default-directory clover-path))
+    (magit-pull)))
+
+(defun clover-update ()
+  "Update clover."
+  (interactive)
+  (clover-clear-folder)
+  (clover-pull-from-remote)
+  (clover-install-packages)
+  (message "Done!"))
 
 (provide 'install-packages)
 ;;; install-packages.el ends here
