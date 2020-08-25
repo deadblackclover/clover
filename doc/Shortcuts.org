@@ -31,10 +31,13 @@
 |------------------------+---------------------------|
 |Shortcut (C-Ctrl, M-Alt)|Command                    |
 |------------------------+---------------------------|
-|F2                      |eww                        |
-|F3                      |erc                        |
-|F4                      |calculator                 |
-|F6                      |htmlfontify-buffer         |
+|F2                      |eshell                     |
+|F3                      |eww                        |
+|F4                      |elpher                     |
+|F6                      |erc                        |
+|F7                      |calculator                 |
+|F8                      |htmlfontify-buffer         |
+|F9                      |ielm                       |
 |------------------------+---------------------------|
 
 ** Scratch

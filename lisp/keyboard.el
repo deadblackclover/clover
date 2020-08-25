@@ -47,17 +47,26 @@
 ;; Comment line
 (global-set-key (kbd "C-/") 'comment-line)
 
+;; Eshell
+(global-set-key [f2] 'eshell)
+
 ;; EWW
-(global-set-key [f2] 'eww)
+(global-set-key [f3] 'eww)
+
+;; elpher
+(global-set-key [f4] 'elpher)
 
 ;; ERC
-(global-set-key [f3] 'erc)
+(global-set-key [f6] 'erc)
 
 ;; Calculator
-(global-set-key [f4] 'calculator)
+(global-set-key [f7] 'calculator)
 
 ;; htmlfontify-buffer
-(global-set-key [f6] 'htmlfontify-buffer)
+(global-set-key [f8] 'htmlfontify-buffer)
+
+;; ielm
+(global-set-key [f9] 'ielm)
 
 (provide 'keyboard)
 ;;; keyboard.el ends here
