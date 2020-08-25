@@ -50,14 +50,11 @@
 	      (package-install package)))
 	clover-packages-list))
 
-(defun clover-clear-folder ()
+(defun clover-clear-packages ()
   "Clears the Emacs folder."
   (interactive)
-  (delete-directory (concat clover-path "auto-save-list/") t)
+  (delete-file (concat clover-path ".clover"))
   (delete-directory (concat clover-path "elpa/") t)
-  (delete-directory (concat clover-path "eshell/") t)
-  (delete-directory (concat clover-path "request/") t)
-  (delete-directory (concat clover-path "transient/") t)
   (message "Done!"))
 
 (defun clover-pull-from-remote ()
@@ -68,7 +65,7 @@
 (defun clover-update ()
   "Update clover."
   (interactive)
-  (clover-clear-folder)
+  (clover-clear-packages)
   (clover-pull-from-remote)
   (clover-install-packages)
   (save-buffers-kill-emacs))

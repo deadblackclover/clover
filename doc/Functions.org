@@ -3,7 +3,7 @@
 |---------------------------+------------------------------|
 |clover-c-compile           |Compile C file                |
 |clover-c++-compile         |Compile C++ file              |
-|clover-clear-folder        |Clears the Emacs folder       |
+|clover-clear-packages      |Clears the Emacs packages     |
 |clover-install-packages    |Auto install packages         |
 |clover-new-c               |Create a C file               |
 |clover-new-c++             |Create a C++ file             |
