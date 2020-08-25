@@ -8,9 +8,11 @@
 ;;; Code:
 (package-initialize)
 
+;; Global Variables
 (setq clover-version "v0.1.2")
 (setq clover-path (file-name-directory (or load-file-name buffer-file-name)))
 
+;; Custom file
 (setq custom-file (concat clover-path ".clover"))
 (write-region "" nil custom-file)
 (load custom-file)
@@ -20,8 +22,6 @@
 ;; Install packages
 (require 'install-packages)
 (clover-install-packages)
-
-;; Language setting
 
 (require 'clover-buffer)
 (require 'window)
