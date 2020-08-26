@@ -23,10 +23,10 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 (setq links "
 
-[[https://github.com/deadblackclover/emacs.d][Source code]]
-[[https://github.com/deadblackclover/emacs.d/releases][Releases]]
+[[https://github.com/deadblackclover/clover][Source code]]
+[[https://github.com/deadblackclover/clover/releases][Releases]]
 [[https://github.com/deadblackclover][DEADBLACKCLOVER]]
-[[https://github.com/deadblackclover/emacs.d/blob/master/LICENSE][GNU GPL-3.0]]
+[[https://github.com/deadblackclover/clover/blob/master/LICENSE][GNU GPL-3.0]]
 
 ")
 

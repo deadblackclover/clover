@@ -1,15 +1,15 @@
 #+TITLE: Clover Emacs
 
-[[https://img.shields.io/github/v/release/deadblackclover/emacs.d.svg?style=flat-square]]
+[[https://img.shields.io/github/v/release/deadblackclover/clover.svg?style=flat-square]]
 [[https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=flat-square]]
-[[https://img.shields.io/github/last-commit/deadblackclover/emacs.d.svg?style=flat-square]]
+[[https://img.shields.io/github/last-commit/deadblackclover/clover.svg?style=flat-square]]
 
 Emacs for real hackers
 
 * Installation
 
 #+BEGIN_SRC shell
-  cd && git clone https://github.com/deadblackclover/emacs.d.git ~/.emacs.d
+  cd && git clone https://github.com/deadblackclover/clover.git ~/.emacs.d
 #+END_SRC
 
 * Documentation
