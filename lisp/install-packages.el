@@ -25,6 +25,7 @@
 	epresent
 	flycheck
 	js2-mode
+	magit
 	mastodon
 	neotree
 	nyan-mode
@@ -56,16 +57,14 @@
   (message "Done!"))
 
 (defun clover-pull-from-remote () 
-  "Pulling from remote."
+  "Pulling from remote." 
   (let ((default-directory clover-path)) 
-    (vc-pull)))
+    (magit-pull)))
 
 (defun clover-update () 
   "Update clover." 
   (interactive) 
-  (clover-clear-packages) 
   (clover-pull-from-remote) 
-  (clover-install-packages) 
   (save-buffers-kill-emacs))
 
 (provide 'install-packages)
