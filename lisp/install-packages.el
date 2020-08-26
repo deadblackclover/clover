@@ -38,36 +38,34 @@
 	rainbow-delimiters
 	reverse-im
 	rust-mode
-	scala-mode
-	))
+	scala-mode))
 
-(defun clover-install-packages ()
-  "Auto install packages."
-  (interactive)
-  (package-refresh-contents)
-  (mapc #'(lambda (package)
-	    (unless (package-installed-p package)
-	      (package-install package)))
-	clover-packages-list))
+(defun clover-install-packages () 
+  "Auto install packages." 
+  (interactive) 
+  (package-refresh-contents) 
+  (mapc #'(lambda (package) 
+	    (unless (package-installed-p package) 
+	      (package-install package))) clover-packages-list))
 
-(defun clover-clear-packages ()
-  "Clears the Emacs folder."
-  (interactive)
-  (delete-file (concat clover-path ".clover"))
-  (delete-directory (concat clover-path "elpa/") t)
+(defun clover-clear-packages () 
+  "Clears the Emacs folder." 
+  (interactive) 
+  (delete-file (concat clover-path ".clover")) 
+  (delete-directory (concat clover-path "elpa/") t) 
   (message "Done!"))
 
-(defun clover-pull-from-remote ()
+(defun clover-pull-from-remote () 
   "Pulling from remote."
-  (let ((default-directory clover-path))
+  (let ((default-directory clover-path)) 
     (vc-pull)))
 
-(defun clover-update ()
-  "Update clover."
-  (interactive)
-  (clover-clear-packages)
-  (clover-pull-from-remote)
-  (clover-install-packages)
+(defun clover-update () 
+  "Update clover." 
+  (interactive) 
+  (clover-clear-packages) 
+  (clover-pull-from-remote) 
+  (clover-install-packages) 
   (save-buffers-kill-emacs))
 
 (provide 'install-packages)
