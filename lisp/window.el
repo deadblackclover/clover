@@ -8,7 +8,7 @@
 ;;; Code:
 (require 'reverse-im)
 
-(setq-default frame-title-format (concat "%b - Happy Hacking! - Clover Emacs " clover-version))
+(setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
 (if window-system (tool-bar-mode -1))
 (if window-system (menu-bar-mode -1))
