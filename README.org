@@ -12,6 +12,9 @@ Emacs for real hackers
   cd && git clone https://github.com/deadblackclover/clover.git ~/.emacs.d
 #+END_SRC
 
+* Update
+Type ~M-x clover-update~ to get new version.
+
 * Documentation
 + [[doc/Shortcuts.org][Shortcuts]]
 + [[doc/Functions.org][Functions]]
