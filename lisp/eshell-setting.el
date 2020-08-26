@@ -19,7 +19,7 @@
 (add-to-list 'eshell-visual-commands "make")
 
 ;; Rust
-(add-to-list 'eshell-visual-commands "cargo")
+(add-to-list 'eshell-visual-subcommands '("cargo" "build" "check" "doc" "publish" "run" "test"))
 
 ;; JS
 (add-to-list 'eshell-visual-commands "npm")
