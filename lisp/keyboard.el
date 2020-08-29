@@ -24,9 +24,6 @@
 ;; Select Text
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
-;; Neotree toggle
-(global-set-key [f8] 'neotree-toggle)
-
 ;; New scratch
 (defun clover-new-scratch () 
   "Create a new *scratch* buffer." 
@@ -62,11 +59,14 @@
 ;; Calculator
 (global-set-key [f7] 'calculator)
 
-;; htmlfontify-buffer
-(global-set-key [f8] 'htmlfontify-buffer)
+;; Neotree toggle
+(global-set-key [f8] 'neotree-toggle)
 
 ;; ielm
 (global-set-key [f9] 'ielm)
+
+;; htmlfontify-buffer
+(global-set-key [f10] 'htmlfontify-buffer)
 
 (provide 'keyboard)
 ;;; keyboard.el ends here

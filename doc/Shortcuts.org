@@ -14,7 +14,6 @@
 |C-x                     |kill-region                |
 |C-v                     |yank                       |
 |C-a                     |mark-whole-buffer          |
-|F8                      |neotree-toggle             |
 |C-x <LEFT>              |previous-buffer            |
 |C-x <RIGHT>             |next-buffer                |
 |C-x C-b                 |list-buffers               |
@@ -39,8 +38,9 @@
 |F4                      |elpher                     |
 |F6                      |erc                        |
 |F7                      |calculator                 |
-|F8                      |htmlfontify-buffer         |
+|F8                      |neotree-toggle             |
 |F9                      |ielm                       |
+|F10                     |htmlfontify-buffer         |
 |------------------------+---------------------------|
 
 ** Scratch
