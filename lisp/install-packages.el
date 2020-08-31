@@ -41,30 +41,32 @@
 	rust-mode
 	scala-mode))
 
-(defun clover-install-packages () 
-  "Auto install packages." 
-  (interactive) 
-  (package-refresh-contents) 
-  (mapc #'(lambda (package) 
-	    (unless (package-installed-p package) 
+(defun clover-install-packages ()
+  "Auto install packages."
+  (interactive)
+  (package-refresh-contents)
+  (mapc #'(lambda (package)
+	    (unless (package-installed-p package)
 	      (package-install package))) clover-packages-list))
 
-(defun clover-clear-packages () 
-  "Clears the Emacs folder." 
-  (interactive) 
-  (delete-file (concat clover-path ".clover")) 
-  (delete-directory (concat clover-path "elpa/") t) 
+(defun clover-clear-packages ()
+  "Clears the Emacs folder."
+  (interactive)
+  (delete-file (concat clover-path ".clover"))
+  (delete-directory (concat clover-path "elpa/") t)
   (message "Done!"))
 
-(defun clover-pull-from-remote () 
-  "Pulling from remote." 
-  (let ((default-directory clover-path)) 
-    (magit-pull)))
+(defun clover-pull-from-remote ()
+  "Pulling from remote."
+  (progn (message "Updating...")
+	 (cd clover-path)
+	 (shell-command "git pull")
+	 (message "Done!")))
 
-(defun clover-update () 
-  "Update clover." 
-  (interactive) 
-  (clover-pull-from-remote) 
+(defun clover-update ()
+  "Update clover."
+  (interactive)
+  (clover-pull-from-remote)
   (save-buffers-kill-emacs))
 
 (provide 'install-packages)
