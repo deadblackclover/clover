@@ -9,11 +9,13 @@
 |clover-install-packages    |Auto install packages         |
 |clover-new-c               |Create a C file               |
 |clover-new-c++             |Create a C++ file             |
+|clover-new-node            |Create a Node.js file         |
 |clover-new-python          |Create a Python file          |
 |clover-new-racket          |Create a Racket file          |
 |clover-new-rust            |Create a Rust file            |
 |clover-new-scratch         |Creates a new *scratch* buffer|
 |clover-new-scratch-org-mode|Creates a new *scratch* buffer|
+|clover-node-run            |Run Node.js file              |
 |clover-python-run          |Run Python file               |
 |clover-update              |Update clover                 |
 |---------------------------+------------------------------|
