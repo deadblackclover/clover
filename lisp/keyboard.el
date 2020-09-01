@@ -25,21 +25,34 @@
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
 ;; New scratch
-(defun clover-new-scratch () 
-  "Create a new *scratch* buffer." 
-  (interactive) 
+(defun clover-new-scratch ()
+  "Create a new *scratch* buffer."
+  (interactive)
   (switch-to-buffer (get-buffer-create "*scratch*")))
 
 (global-set-key (kbd "C-n") 'clover-new-scratch)
 
 ;; New scratch org mode
-(defun clover-new-scratch-org-mode () 
-  "Create a new *scratch* buffer." 
-  (interactive) 
-  (switch-to-buffer (get-buffer-create "*scratch org-mode*")) 
+(defun clover-new-scratch-org-mode ()
+  "Create a new *scratch* buffer."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "*scratch org-mode*"))
   (org-mode))
 
 (global-set-key (kbd "M-n") 'clover-new-scratch-org-mode)
+
+;; Help
+(defun clover-help ()
+  "Clover help."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "*Help*"))
+  (insert "#+TITLE: Help\n\n")
+  (insert-file-contents (concat clover-path "doc/Shortcuts.org"))
+  (insert-file-contents (concat clover-path "doc/Functions.org"))
+  (org-mode)
+  (beginning-of-buffer))
+
+(global-set-key [f1] 'clover-help)
 
 ;; Comment line
 (global-set-key (kbd "C-/") 'comment-line)
