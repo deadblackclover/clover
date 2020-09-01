@@ -32,6 +32,7 @@
 (require 'c-setting)
 (require 'rust-setting)
 (require 'python-setting)
+(require 'node-setting)
 
 ;; Eshell
 (require 'eshell-setting)
