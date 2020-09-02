@@ -10,7 +10,8 @@
 
 ;; Global Variables
 (setq clover-version "v0.2.0")
-(setq clover-path (file-name-directory (or load-file-name buffer-file-name)))
+(setq clover-path (file-name-directory (or load-file-name
+                                           buffer-file-name)))
 
 ;; Custom file
 (setq custom-file (concat clover-path ".clover"))
@@ -41,8 +42,10 @@
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
 
-(add-hook 'after-init-hook (lambda () 
-			     (load-theme 'cyberpunk t)))
+(setq-default indent-tabs-mode nil) ;; No tabs
+
+(add-hook 'after-init-hook (lambda ()
+                             (load-theme 'cyberpunk t)))
 
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 
