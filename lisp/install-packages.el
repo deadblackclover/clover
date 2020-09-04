@@ -14,40 +14,19 @@
 
 (setq package-enable-at-startup nil)
 
-(setq clover-packages-list
-      '(c-eldoc
-	cargo
-	cyberpunk-theme
-	diff-hl
-	disaster
-	elisp-format
-	elpher
-	epresent
-	flycheck
-	js2-mode
-	magit
-	mastodon
-	neotree
-	nyan-mode
-	package-lint
-	paredit
-	php-mode
-	plan9-theme
-	py-autopep8
-	python-mode
-	racket-mode
-	rainbow-delimiters
-	reverse-im
-	rust-mode
-	scala-mode))
+(setq clover-packages-list '(c-eldoc cargo cyberpunk-theme diff-hl disaster elisp-format elpher
+                                     epresent flycheck js2-mode magit mastodon neotree nyan-mode
+                                     package-lint paredit php-mode plan9-theme py-autopep8
+                                     python-mode racket-mode rainbow-delimiters reverse-im rust-mode
+                                     scala-mode twtxt))
 
 (defun clover-install-packages ()
   "Auto install packages."
   (interactive)
   (package-refresh-contents)
   (mapc #'(lambda (package)
-	    (unless (package-installed-p package)
-	      (package-install package))) clover-packages-list))
+            (unless (package-installed-p package)
+              (package-install package))) clover-packages-list))
 
 (defun clover-clear-packages ()
   "Clears the Emacs folder."
@@ -59,9 +38,9 @@
 (defun clover-pull-from-remote ()
   "Pulling from remote."
   (progn (message "Updating...")
-	 (cd clover-path)
-	 (shell-command "git pull")
-	 (message "Done!")))
+         (cd clover-path)
+         (shell-command "git pull")
+         (message "Done!")))
 
 (defun clover-update ()
   "Update clover."
