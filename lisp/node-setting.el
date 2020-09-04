@@ -22,7 +22,7 @@
 
 ;; Run
 (add-hook 'js2-mode-hook (lambda ()
-			   (define-key js2-mode-map (kbd "<f5>") 'clover-node-run)))
+                           (define-key js2-mode-map (kbd "<f5>") 'clover-node-run)))
 
 (provide 'node-setting)
 ;;; node-setting.el ends here

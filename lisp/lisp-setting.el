@@ -6,34 +6,34 @@
 ;;; Commentary:
 
 ;;; Code:
-(defun clover-new-racket () 
-  "Create a Racket file." 
-  (interactive) 
-  (switch-to-buffer (get-buffer-create "untitled.rkt")) 
-  (setq initial-major-mode (quote racket-mode)) 
+(defun clover-new-racket ()
+  "Create a Racket file."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "untitled.rkt"))
+  (setq initial-major-mode (quote racket-mode))
   (funcall initial-major-mode))
 
 ;; racket-run
-(add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "<f5>") 'racket-run)))
+(add-hook 'racket-mode-hook (lambda ()
+                              (define-key racket-mode-map (kbd "<f5>") 'racket-run)))
 
 ;; elisp run
-(add-hook 'emacs-lisp-mode-hook (lambda () 
-				  (define-key emacs-lisp-mode-map (kbd "<f5>") 'eval-buffer)))
+(add-hook 'emacs-lisp-mode-hook (lambda ()
+                                  (define-key emacs-lisp-mode-map (kbd "<f5>") 'eval-buffer)))
 
 ;; elisp-format-buffer
-(add-hook 'emacs-lisp-mode-hook (lambda () 
-				  (define-key emacs-lisp-mode-map (kbd "C-i")
-				    'elisp-format-buffer)))
+(add-hook 'emacs-lisp-mode-hook (lambda ()
+                                  (define-key emacs-lisp-mode-map (kbd "C-i")
+                                    'elisp-format-buffer)))
 
-(add-hook 'lisp-mode-hook (lambda () 
-			    (define-key lisp-mode-map (kbd "C-i") 'elisp-format-buffer)))
+(add-hook 'lisp-mode-hook (lambda ()
+                            (define-key lisp-mode-map (kbd "C-i") 'elisp-format-buffer)))
 
-(add-hook 'scheme-mode-hook (lambda () 
-			      (define-key scheme-mode-map (kbd "C-i") 'elisp-format-buffer)))
+(add-hook 'scheme-mode-hook (lambda ()
+                              (define-key scheme-mode-map (kbd "C-i") 'elisp-format-buffer)))
 
-(add-hook 'racket-mode-hook (lambda () 
-			      (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
+(add-hook 'racket-mode-hook (lambda ()
+                              (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
 
 ;; ElDoc
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)

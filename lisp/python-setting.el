@@ -6,21 +6,21 @@
 ;;; Commentary:
 
 ;;; Code:
-(defun clover-new-python () 
-  "Create a Python file." 
-  (interactive) 
-  (switch-to-buffer (get-buffer-create "untitled.py")) 
-  (setq initial-major-mode (quote python-mode)) 
+(defun clover-new-python ()
+  "Create a Python file."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "untitled.py"))
+  (setq initial-major-mode (quote python-mode))
   (funcall initial-major-mode))
 
-(defun clover-python-run () 
-  "Run Python file." 
-  (interactive) 
+(defun clover-python-run ()
+  "Run Python file."
+  (interactive)
   (compile (format "python3 %s" (buffer-file-name))))
 
 ;; Run
-(add-hook 'python-mode-hook (lambda () 
-			      (define-key python-mode-map (kbd "<f5>") 'clover-python-run)))
+(add-hook 'python-mode-hook (lambda ()
+                              (define-key python-mode-map (kbd "<f5>") 'clover-python-run)))
 
 ;; Format
 (add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
