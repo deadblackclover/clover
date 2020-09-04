@@ -32,7 +32,10 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert "#+STARTUP: inlineimages\n")
-(insert (format "[[%simg/clover.png]] [[%simg/key.png]]" clover-path clover-path))
+(insert (format "[[%simg/clover.png]] [[%simg/key.png]] [[%simg/cipher.png]]"
+                clover-path
+                clover-path
+                clover-path))
 (insert logo)
 (insert (format "Clover: %s\nEmacs: v%s" clover-version emacs-version))
 (insert links)
