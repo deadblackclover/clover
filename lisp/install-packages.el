@@ -15,7 +15,7 @@
 (setq package-enable-at-startup nil)
 
 (setq clover-packages-list '(c-eldoc cargo cyberpunk-theme diff-hl disaster elisp-format elpher
-                                     epresent flycheck js2-mode magit mastodon neotree nyan-mode
+                                     epresent flycheck hl-todo js2-mode magit mastodon neotree nyan-mode
                                      package-lint paredit php-mode plan9-theme py-autopep8
                                      python-mode racket-mode rainbow-delimiters reverse-im rust-mode
                                      scala-mode twtxt))

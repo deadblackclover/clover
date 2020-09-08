@@ -31,6 +31,7 @@
 (reverse-im-activate "russian-computer") ;; Activate Reverse-im
 
 (global-diff-hl-mode) ;; Activate diff-hl
+(global-hl-todo-mode t) ;; Activate hl-todo
 
 (provide 'window)
 ;;; window.el ends here
