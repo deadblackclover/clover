@@ -3,6 +3,8 @@
 [[https://img.shields.io/github/v/release/deadblackclover/clover.svg?style=flat-square]]
 [[https://img.shields.io/badge/GNU%20Emacs-26.1-b48ead.svg?style=flat-square]]
 [[https://img.shields.io/github/last-commit/deadblackclover/clover.svg?style=flat-square]]
+[[img/hacker.png]]
+[[img/emacs.png]]
 
 Emacs for real hackers
 
