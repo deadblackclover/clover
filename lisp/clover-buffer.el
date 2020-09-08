@@ -27,7 +27,6 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 [[https://github.com/deadblackclover/clover/releases][Releases]]
 [[https://github.com/deadblackclover][DEADBLACKCLOVER]]
 [[https://github.com/deadblackclover/clover/blob/master/LICENSE][GNU GPL-3.0]]
-
 ")
 
 (switch-to-buffer (get-buffer-create "*clover*"))
@@ -39,6 +38,7 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 (insert logo)
 (insert (format "Clover: %s\nEmacs: v%s" clover-version emacs-version))
 (insert links)
+(insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]" clover-path clover-path))
 (org-mode)
 (beginning-of-buffer)
 
