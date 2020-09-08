@@ -47,6 +47,7 @@
   (interactive)
   (switch-to-buffer (get-buffer-create "*Help*"))
   (insert "#+TITLE: Help\n\n")
+  (insert-file-contents (concat clover-path "doc/Games.org"))
   (insert-file-contents (concat clover-path "doc/Shortcuts.org"))
   (insert-file-contents (concat clover-path "doc/Functions.org"))
   (org-mode)
