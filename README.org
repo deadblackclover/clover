@@ -18,6 +18,7 @@ Type ~M-x clover-update~ to get new version.
 * Documentation
 + [[doc/Shortcuts.org][Shortcuts]]
 + [[doc/Functions.org][Functions]]
++ [[doc/Games.org][Games]]
 
 [[img/hacker.png]]
 [[img/emacs.png]]
