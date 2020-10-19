@@ -18,7 +18,7 @@
                                      epresent flycheck hl-todo js2-mode magit mastodon neotree nyan-mode
                                      package-lint paredit php-mode plan9-theme py-autopep8
                                      python-mode racket-mode rainbow-delimiters reverse-im rust-mode
-                                     scala-mode twtxt))
+                                     scala-mode solidity-mode twtxt))
 
 (defun clover-install-packages ()
   "Auto install packages."
