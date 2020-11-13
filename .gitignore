@@ -1,6 +1,8 @@
 \#*
 *.elc
 .clover
+.dap-breakpoints
+.lsp-session-v1
 url/
 var/
 edts/

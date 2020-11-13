@@ -34,6 +34,7 @@
 (require 'rust-setting)
 (require 'python-setting)
 (require 'node-setting)
+(require 'scala-setting)
 
 ;; Eshell
 (require 'eshell-setting)
