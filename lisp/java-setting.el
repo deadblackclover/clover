@@ -18,6 +18,7 @@
   (funcall initial-major-mode))
 
 (defun clover-build-and-run-java () 
+  "Build and run Java project." 
   (interactive) 
   (gradle-run "build run"))
 
