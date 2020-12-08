@@ -35,6 +35,7 @@
 (require 'python-setting)
 (require 'node-setting)
 (require 'scala-setting)
+(require 'java-setting)
 
 ;; Eshell
 (require 'eshell-setting)
