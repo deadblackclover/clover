@@ -9,6 +9,13 @@
 (require 'gradle-mode)
 (add-hook 'java-mode-hook '(lambda() (gradle-mode 1)))
 
+(defun clover-new-java ()
+  "Create a Java file."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "untitled.java"))
+  (setq initial-major-mode (quote java-mode))
+  (funcall initial-major-mode))
+
 (defun build-and-run ()
 	(interactive)
 	(gradle-run "build run"))
