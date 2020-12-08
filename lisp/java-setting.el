@@ -17,8 +17,8 @@
   (funcall initial-major-mode))
 
 (defun build-and-run ()
-	(interactive)
-	(gradle-run "build run"))
+  (interactive)
+  (gradle-run "build run"))
 
 (define-key gradle-mode-map (kbd "C-c C-r") 'build-and-run)
 
