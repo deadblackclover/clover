@@ -1,4 +1,4 @@
-;;; java-setting.el --- Scala setting
+;;; java-setting.el --- Java setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
