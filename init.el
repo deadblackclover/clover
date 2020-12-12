@@ -52,6 +52,10 @@
 
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 
+;; Company
+(add-hook 'after-init-hook    'global-company-mode)
+(add-hook 'solidity-mode-hook 'company-solidity)
+
 ;; Paredit mode
 (add-hook 'emacs-lisp-mode-hook       'enable-paredit-mode)
 (add-hook 'lisp-mode-hook             'enable-paredit-mode)
