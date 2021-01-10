@@ -40,6 +40,10 @@
 ;; Eshell
 (require 'eshell-setting)
 
+;; FASM
+(require 'fasm-mode)
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
+
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
