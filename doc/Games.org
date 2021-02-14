@@ -20,4 +20,5 @@
 |solitaire                  |Balls on an 8x8 cross shaped grid                         |
 |studlify-region            |Convert text to stUdlY caps                               |
 |tetris                     |Arrange falling blocks                                    |
+|pacmacs                    |Pacman for Emacs                                          |
 |---------------------------+----------------------------------------------------------|
