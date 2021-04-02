@@ -38,13 +38,10 @@
 (require 'node-setting)
 (require 'scala-setting)
 (require 'java-setting)
+(require 'other-lang-setting)
 
 ;; Eshell
 (require 'eshell-setting)
-
-;; FASM
-(require 'fasm-mode)
-(add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
