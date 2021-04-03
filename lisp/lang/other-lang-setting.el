@@ -19,5 +19,9 @@
 (add-to-list 'auto-mode-alist '("\\.zok\\'" . python-mode))
 (add-to-list 'auto-mode-alist '("\\.vy\\'" . python-mode))
 
+;; Zinc
+(require 'rust-mode)
+(add-to-list 'auto-mode-alist '("\\.zn\\'" . rust-mode))
+
 (provide 'other-lang-setting)
 ;;; other-lang-setting.el ends here
