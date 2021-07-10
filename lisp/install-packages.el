@@ -14,7 +14,7 @@
 
 (setq package-enable-at-startup nil)
 
-(setq clover-packages-list '(c-eldoc ag cargo company company-solidity company-lsp cyberpunk-theme diff-hl
+(setq clover-packages-list '(c-eldoc ag cargo company company-solidity cyberpunk-theme diff-hl
                                      disaster elisp-format elpher epresent flycheck gradle-mode haskell-mode
                                      hl-todo js2-mode lolcat lsp-metals lsp-mode lsp-ui magit mastodon nasm-mode
                                      neotree nyan-mode package-lint pacmacs paredit php-mode plan9-theme posframe
