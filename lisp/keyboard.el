@@ -9,10 +9,10 @@
 (require 'neotree)
 
 ;; File
-(global-set-key (kbd "C-o") 'find-file)       ;; Open file
-(global-set-key (kbd "C-s") 'save-buffer)     ;; Save file
-(global-set-key (kbd "C-w") 'kill-buffer)     ;; Close buffer
-(global-set-key (kbd "C-f") 'isearch-forward) ;; Search buffer
+(global-set-key (kbd "C-o") 'find-file)              ;; Open file
+(global-set-key (kbd "C-s") 'save-buffer)            ;; Save file
+(global-set-key (kbd "C-w") 'kill-buffer)            ;; Close buffer
+(global-set-key (kbd "C-f") 'isearch-forward-regexp) ;; Search buffer
 
 ;; Copy Paste
 ;; (global-set-key (kbd "C-z") 'undo)
