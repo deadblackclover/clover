@@ -19,7 +19,7 @@
                                      hl-todo js2-mode lolcat lsp-metals lsp-mode lsp-ui magit mastodon nasm-mode
                                      neotree nyan-mode package-lint pacmacs paredit php-mode plan9-theme posframe
                                      py-autopep8 python-mode racket-mode rainbow-delimiters reverse-im rust-mode
-                                     sbt-mode scala-mode solidity-mode twtxt zig-mode))
+                                     sbt-mode scala-mode solidity-mode twtxt xah-find zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."
