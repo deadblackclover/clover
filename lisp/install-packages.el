@@ -14,8 +14,8 @@
 
 (setq package-enable-at-startup nil)
 
-(setq clover-packages-list '(c-eldoc ag cargo company company-solidity cyberpunk-theme diff-hl
-                                     disaster elisp-format elpher epresent flycheck gradle-mode haskell-mode
+(setq clover-packages-list '(c-eldoc ag cargo company company-solidity cyberpunk-theme diff-hl disaster elisp-format
+                                     elpher epresent find-file-in-repository flycheck gradle-mode haskell-mode
                                      hl-todo js2-mode lolcat lsp-metals lsp-mode lsp-ui magit mastodon nasm-mode
                                      neotree nyan-mode package-lint pacmacs paredit php-mode plan9-theme posframe
                                      py-autopep8 python-mode racket-mode rainbow-delimiters reverse-im rust-mode
