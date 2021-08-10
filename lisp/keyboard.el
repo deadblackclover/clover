@@ -83,5 +83,8 @@
 ;; htmlfontify-buffer
 (global-set-key [f10] 'htmlfontify-buffer)
 
+;; Whitespace
+(global-set-key [f11] 'whitespace-mode)
+
 (provide 'keyboard)
 ;;; keyboard.el ends here
