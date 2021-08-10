@@ -29,6 +29,7 @@
 (require 'clover-buffer)
 (require 'window)
 (require 'keyboard)
+(require 'whitespace-setting)
 
 ;; Language setting
 (require 'lisp-setting)
@@ -74,6 +75,9 @@
 
 ;; Activate flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; Activate whitespace
+(global-whitespace-mode)
 
 (provide 'init)
 ;;; init.el ends here
