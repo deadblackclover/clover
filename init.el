@@ -66,12 +66,14 @@
 (add-hook 'lisp-interaction-mode-hook 'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           'enable-paredit-mode)
 (add-hook 'racket-mode-hook           'enable-paredit-mode)
+(add-hook 'clojure-mode-hook          'enable-paredit-mode)
 
 ;; Rainbow parentheses
 (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'lisp-mode-hook       'rainbow-delimiters-mode)
 (add-hook 'scheme-mode-hook     'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook     'rainbow-delimiters-mode)
+(add-hook 'clojure-mode-hook    'rainbow-delimiters-mode)
 
 ;; Activate flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
