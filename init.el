@@ -30,6 +30,7 @@
 (require 'window)
 (require 'keyboard)
 (require 'whitespace-setting)
+(require 'magit-setting)
 
 ;; Language setting
 (require 'lisp-setting)

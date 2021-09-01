@@ -25,6 +25,9 @@
 ;; Select Text
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
+;; Git status
+(global-set-key (kbd "C-x C-s") 'magit-status)
+
 ;; New scratch
 (defun clover-new-scratch ()
   "Create a new *scratch* buffer."
