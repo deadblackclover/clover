@@ -21,6 +21,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/lang" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/mode" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/cryptocurrency" user-emacs-directory))
 
 ;; Install packages
 (require 'install-packages)

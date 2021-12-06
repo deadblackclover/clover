@@ -8,6 +8,8 @@
 ;;; Code:
 (require 'reverse-im)
 
+(require 'xmr-ticker)
+
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
 (if window-system (tool-bar-mode -1))
@@ -32,6 +34,13 @@
 
 (global-diff-hl-mode) ;; Activate diff-hl
 (global-hl-todo-mode t) ;; Activate hl-todo
+
+;;Optional: You can setup the fetch interval
+;;default: 10 secs
+(setq xmr-ticker-api-poll-interval 10)
+
+;;Enable xmr-ticker-mode
+(xmr-ticker-mode 1)
 
 (provide 'window)
 ;;; window.el ends here
