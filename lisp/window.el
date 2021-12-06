@@ -9,6 +9,7 @@
 (require 'reverse-im)
 
 (require 'xmr-ticker)
+(require 'oxen-ticker)
 
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
@@ -38,9 +39,12 @@
 ;;Optional: You can setup the fetch interval
 ;;default: 10 secs
 (setq xmr-ticker-api-poll-interval 10)
+(setq oxen-ticker-api-poll-interval 10)
 
 ;;Enable xmr-ticker-mode
 (xmr-ticker-mode 1)
+;;Enable oxen-ticker-mode
+(oxen-ticker-mode 1)
 
 (provide 'window)
 ;;; window.el ends here
