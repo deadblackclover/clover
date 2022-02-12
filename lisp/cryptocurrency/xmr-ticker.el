@@ -34,7 +34,7 @@
   :prefix "xmr-ticker-")
 
 (defconst xmr-ticker-api-url
-  "https://api.cryptonator.com/api/ticker/xmr-usd")
+  "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd")
 
 (defcustom xmr-ticker-api-poll-interval 10
   "Default interval to poll to the bitstamp api."
@@ -71,7 +71,7 @@
 
 (defun xmr-ticker-parse(json)
   "Parse JSON."
-  (assoc-default 'price (assoc-default 'ticker json)))
+  (assoc-default 'usd (assoc-default 'monero json)))
 
 (defun xmr-ticker-fetch()
   "Fetch data."
@@ -81,8 +81,9 @@
                                  (&key
                                   data
                                   &allow-other-keys)
-                                 (setq xmr-ticker-mode-line (concat " XMR: $" (xmr-ticker-parse
-                                                                          data))))))))
+                                 (setq xmr-ticker-mode-line (concat " XMR: $" (number-to-string
+                                                                               (xmr-ticker-parse
+                                                                                data)))))))))
 
 ;;;###autoload
 (define-minor-mode xmr-ticker-mode "Minor mode to display the latest XMR price."
@@ -94,4 +95,3 @@
 
 (provide 'xmr-ticker)
 ;;; xmr-ticker.el ends here
-
