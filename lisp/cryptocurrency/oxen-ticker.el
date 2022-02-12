@@ -33,7 +33,7 @@
   :prefix "oxen-ticker-")
 
 (defconst oxen-ticker-api-url
-  "https://api.cryptonator.com/api/ticker/oxen-usd")
+  "https://api.coingecko.com/api/v3/simple/price?ids=loki-network&vs_currencies=usd")
 
 (defcustom oxen-ticker-api-poll-interval 10
   "Default interval to poll to the bitstamp api."
@@ -70,7 +70,7 @@
 
 (defun oxen-ticker-parse(json)
   "Parse JSON."
-  (assoc-default 'price (assoc-default 'ticker json)))
+  (assoc-default 'usd (assoc-default 'loki-network json)))
 
 (defun oxen-ticker-fetch()
   "Fetch data."
@@ -80,8 +80,9 @@
                                  (&key
                                   data
                                   &allow-other-keys)
-                                 (setq oxen-ticker-mode-line (concat " OXEN: $" (oxen-ticker-parse
-                                                                          data))))))))
+                                 (setq oxen-ticker-mode-line (concat " OXEN: $" (number-to-string
+                                                                                 (oxen-ticker-parse
+                                                                                  data)))))))))
 
 ;;;###autoload
 (define-minor-mode oxen-ticker-mode "Minor mode to display the latest OXEN price."
@@ -93,4 +94,3 @@
 
 (provide 'oxen-ticker)
 ;;; oxen-ticker.el ends here
-
