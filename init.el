@@ -46,6 +46,9 @@
 ;; Eshell
 (require 'eshell-setting)
 
+;; xah-find
+(require 'xah-find)
+
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
