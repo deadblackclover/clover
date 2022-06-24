@@ -17,6 +17,7 @@ my-org/
 request/
 transient/
 org-files/
+eln-cache/
 semanticdb/
 auto-save-list/
 mastodon.plstore

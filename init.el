@@ -8,6 +8,9 @@
 ;;; Code:
 (package-initialize)
 
+;; Emacs >= 28 a lot of bugs in packages that apparently won't be updated for a long time
+(setq warning-minimum-level :emergency)
+
 ;; Global Variables
 (setq clover-version "v0.4.1")
 (setq clover-path (file-name-directory (or load-file-name
