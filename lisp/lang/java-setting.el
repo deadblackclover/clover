@@ -7,7 +7,7 @@
 
 ;;; Code:
 (require 'gradle-mode)
-(add-hook 'java-mode-hook '(lambda() 
+(add-hook 'java-mode-hook (lambda() 
                              (gradle-mode 1)))
 
 (defun clover-new-java () 
