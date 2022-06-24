@@ -12,7 +12,7 @@
 (setq warning-minimum-level :emergency)
 
 ;; Global Variables
-(setq clover-version "v0.4.1")
+(setq clover-version "v0.4.2")
 (setq clover-path (file-name-directory (or load-file-name
                                            buffer-file-name)))
 
