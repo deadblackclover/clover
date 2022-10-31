@@ -17,10 +17,10 @@
 (setq clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity cyberpunk-theme diff-hl
                                      disaster elisp-format elm-mode elpher epresent find-file-in-repository
                                      flycheck gradle-mode haskell-mode hl-todo js2-mode lolcat lsp-metals
-                                     lsp-mode lsp-ui magit mastodon nasm-mode neotree nyan-mode package-lint
+                                     lsp-mode lsp-ui magit mastodon nasm-mode nyan-mode package-lint
                                      pacmacs paredit php-mode plan9-theme posframe py-autopep8 python-mode
                                      racket-mode rainbow-delimiters reverse-im rust-mode sbt-mode scala-mode
-                                     solidity-mode twtxt zig-mode))
+                                     solidity-mode treemacs twtxt zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."

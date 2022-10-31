@@ -29,7 +29,7 @@
 
 (nyan-mode) ;; Activate nyan-mode
 
-(neotree) ;; Activate neotree
+(treemacs) ;; Activate treemacs
 
 (reverse-im-activate "russian-computer") ;; Activate Reverse-im
 

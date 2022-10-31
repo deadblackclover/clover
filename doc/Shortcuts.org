@@ -47,7 +47,7 @@
 |F4                      |elpher                     |
 |F6                      |erc                        |
 |F7                      |calculator                 |
-|F8                      |neotree-toggle             |
+|F8                      |treemacs                   |
 |F9                      |ielm                       |
 |F10                     |htmlfontify-buffer         |
 |F11                     |whitespace-mode            |

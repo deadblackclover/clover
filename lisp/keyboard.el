@@ -6,7 +6,7 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'neotree)
+(require 'treemacs)
 
 ;; File
 (global-set-key (kbd "C-o") 'find-file)              ;; Open file
@@ -77,8 +77,8 @@
 ;; Calculator
 (global-set-key [f7] 'calculator)
 
-;; Neotree toggle
-(global-set-key [f8] 'neotree-toggle)
+;; Treemacs
+(global-set-key [f8] 'treemacs)
 
 ;; ielm
 (global-set-key [f9] 'ielm)
