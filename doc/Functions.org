@@ -21,4 +21,6 @@
 |clover-node-run            |Run Node.js file              |
 |clover-python-run          |Run Python file               |
 |clover-update              |Update clover                 |
+|clover-set-transparency    |Set the window strength       |
+|clover-unset-transparency  |Unset the window strength     |
 |---------------------------+------------------------------|
