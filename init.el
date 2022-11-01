@@ -6,6 +6,9 @@
 ;;; Commentary:
 
 ;;; Code:
+;; Temporary solution to the problem in lsp-metals
+(require 'treemacs-extensions)
+
 (package-initialize)
 
 ;; Global Variables
