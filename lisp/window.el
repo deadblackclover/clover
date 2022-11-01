@@ -47,5 +47,15 @@
 ;;Enable oxen-ticker-mode
 (oxen-ticker-mode 1)
 
+(defun clover-set-transparency ()
+  "Set the window strength."
+  (interactive)
+  (set-frame-parameter (selected-frame) 'alpha '(85 . 50)))
+
+(defun clover-unset-transparency ()
+  "Unset the window strength."
+  (interactive)
+  (set-frame-parameter (selected-frame) 'alpha '(100 . 100)))
+
 (provide 'window)
 ;;; window.el ends here
