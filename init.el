@@ -6,9 +6,6 @@
 ;;; Commentary:
 
 ;;; Code:
-;; Temporary solution to the problem in lsp-metals
-(require 'treemacs-extensions)
-
 (package-initialize)
 
 ;; Global Variables
@@ -29,6 +26,9 @@
 ;; Install packages
 (require 'install-packages)
 (clover-install-packages)
+
+;; Temporary solution to the problem in lsp-metals
+(require 'treemacs-extensions)
 
 (require 'clover-buffer)
 (require 'window-setting)
