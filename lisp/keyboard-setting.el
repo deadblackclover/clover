@@ -1,4 +1,4 @@
-;;; keyboard.el --- Keyboard setting
+;;; keyboard-setting.el --- Keyboard setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
@@ -89,5 +89,5 @@
 ;; Whitespace
 (global-set-key [f11] 'whitespace-mode)
 
-(provide 'keyboard)
-;;; keyboard.el ends here
+(provide 'keyboard-setting)
+;;; keyboard-setting.el ends here

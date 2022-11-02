@@ -32,7 +32,7 @@
 
 (require 'clover-buffer)
 (require 'window-setting)
-(require 'keyboard)
+(require 'keyboard-setting)
 (require 'whitespace-setting)
 (require 'magit-setting)
 
