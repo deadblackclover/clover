@@ -29,7 +29,7 @@
 (require 'json)
 
 (defgroup xmr-ticker nil
-  "xmr-ticker extension"
+  "XMR ticker extension."
   :group 'comms
   :prefix "xmr-ticker-")
 
@@ -77,13 +77,13 @@
   "Fetch data."
   (progn (request xmr-ticker-api-url
            :parser 'json-read
-           :success (function* (lambda
-                                 (&key
-                                  data
-                                  &allow-other-keys)
-                                 (setq xmr-ticker-mode-line (concat " XMR: $" (number-to-string
-                                                                               (xmr-ticker-parse
-                                                                                data)))))))))
+           :success (cl-function (lambda
+                                   (&key
+                                    data
+                                    &allow-other-keys)
+                                   (setq xmr-ticker-mode-line (concat " XMR: $" (number-to-string
+                                                                                 (xmr-ticker-parse
+                                                                                  data)))))))))
 
 ;;;###autoload
 (define-minor-mode xmr-ticker-mode "Minor mode to display the latest XMR price."

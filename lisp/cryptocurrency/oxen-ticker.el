@@ -28,7 +28,7 @@
 (require 'json)
 
 (defgroup oxen-ticker nil
-  "oxen-ticker extension"
+  "Oxen ticker extension."
   :group 'comms
   :prefix "oxen-ticker-")
 
@@ -76,13 +76,13 @@
   "Fetch data."
   (progn (request oxen-ticker-api-url
            :parser 'json-read
-           :success (function* (lambda
-                                 (&key
-                                  data
-                                  &allow-other-keys)
-                                 (setq oxen-ticker-mode-line (concat " OXEN: $" (number-to-string
-                                                                                 (oxen-ticker-parse
-                                                                                  data)))))))))
+           :success (cl-function (lambda
+                                   (&key
+                                    data
+                                    &allow-other-keys)
+                                   (setq oxen-ticker-mode-line (concat " OXEN: $" (number-to-string
+                                                                                   (oxen-ticker-parse
+                                                                                    data)))))))))
 
 ;;;###autoload
 (define-minor-mode oxen-ticker-mode "Minor mode to display the latest OXEN price."

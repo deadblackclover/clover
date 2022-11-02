@@ -39,8 +39,8 @@
 
 ;;Optional: You can setup the fetch interval
 ;;default: 10 secs
-(setq xmr-ticker-api-poll-interval 10)
-(setq oxen-ticker-api-poll-interval 10)
+(setq xmr-ticker-api-poll-interval 60)
+(setq oxen-ticker-api-poll-interval 60)
 
 ;;Enable xmr-ticker-mode
 (xmr-ticker-mode 1)
