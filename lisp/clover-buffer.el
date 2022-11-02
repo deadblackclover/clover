@@ -36,7 +36,11 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
                 clover-path
                 clover-path))
 (insert logo)
-(insert (format "Clover: %s\nEmacs: v%s" clover-version emacs-version))
+(insert (format "Clover version: %s\nGNU Emacs v%s (build %s, %s)"
+                clover-version
+                emacs-version
+                emacs-build-number
+                system-configuration))
 (insert links)
 (insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]" clover-path clover-path))
 (org-mode)
