@@ -1,4 +1,4 @@
-;;; window.el --- Window setting
+;;; window-setting.el --- Window setting
 ;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
@@ -57,5 +57,5 @@
   (interactive)
   (set-frame-parameter (selected-frame) 'alpha '(100 . 100)))
 
-(provide 'window)
-;;; window.el ends here
+(provide 'window-setting)
+;;; window-setting.el ends here

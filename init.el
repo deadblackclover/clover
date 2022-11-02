@@ -31,7 +31,7 @@
 (clover-install-packages)
 
 (require 'clover-buffer)
-(require 'window)
+(require 'window-setting)
 (require 'keyboard)
 (require 'whitespace-setting)
 (require 'magit-setting)
