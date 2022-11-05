@@ -29,7 +29,6 @@
 
 (nyan-mode) ;; Activate nyan-mode
 
-(treemacs) ;; Activate treemacs
 (treemacs-git-mode 'deferred) ;; Activate git mode for treemacs
 
 (reverse-im-activate "russian-computer") ;; Activate Reverse-im
