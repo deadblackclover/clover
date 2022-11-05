@@ -59,6 +59,8 @@
 
 (setq-default indent-tabs-mode nil) ;; No tabs
 
+(recentf-mode 1)
+
 (add-hook 'after-init-hook (lambda ()
                              (load-theme 'cyberpunk t)))
 

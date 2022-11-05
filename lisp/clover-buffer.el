@@ -8,7 +8,7 @@
 ;;; Code:
 (setq inhibit-startup-message t)
 
-(setq logo "
+(setq clover-logo "
 
            88
            88
@@ -21,8 +21,17 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 ")
 
-(setq links "
+(setq clover-recent-files (mapcar (lambda (item)
+                                    (format "[[file:%s][%s]]\n" item item)) recentf-list))
 
+(setq clover-recent-files-view (format "
+
+
+Recent files
+%s
+" (mapconcat 'identity clover-recent-files "")))
+
+(setq clover-links "
 [[https://github.com/deadblackclover/clover][Source code]]
 [[https://github.com/deadblackclover/clover/releases][Releases]]
 [[https://github.com/deadblackclover][DEADBLACKCLOVER]]
@@ -35,13 +44,14 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
                 clover-path
                 clover-path
                 clover-path))
-(insert logo)
+(insert clover-logo)
 (insert (format "Clover version: %s\nGNU Emacs v%s (build %s, %s)"
                 clover-version
                 emacs-version
                 emacs-build-number
                 system-configuration))
-(insert links)
+(insert clover-recent-files-view)
+(insert clover-links)
 (insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]" clover-path clover-path))
 (org-mode)
 (beginning-of-buffer)
