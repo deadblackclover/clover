@@ -18,6 +18,9 @@
 (write-region "" nil custom-file)
 (load custom-file)
 
+;; Recent files
+(recentf-mode 1)
+
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/lang" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/mode" user-emacs-directory))
@@ -58,8 +61,6 @@
 (setq create-lockfiles nil)  ;; stop creating .#lock files
 
 (setq-default indent-tabs-mode nil) ;; No tabs
-
-(recentf-mode 1)
 
 (add-hook 'after-init-hook (lambda ()
                              (load-theme 'cyberpunk t)))
