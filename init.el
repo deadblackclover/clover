@@ -13,6 +13,11 @@
 (setq clover-path (file-name-directory (or load-file-name
                                            buffer-file-name)))
 
+(defun clover-reload-configuration ()
+  "Reload configuration."
+  (interactive)
+  (load-file (concat user-emacs-directory "init.el")))
+
 ;; Custom file
 (setq custom-file (concat clover-path ".clover"))
 (write-region "" nil custom-file)
