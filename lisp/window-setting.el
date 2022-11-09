@@ -13,6 +13,17 @@
 
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
+;; Set default font
+(cond ((string-equal system-type "windows-nt")      ;; Microsoft Windows
+       (when (member "Consolas" (font-family-list))
+         (set-frame-font "Consolas" t t)))
+      ((string-equal system-type "darwin")          ;; MacOS
+       (when (member "Menlo" (font-family-list))
+         (set-frame-font "Menlo" t t)))
+      ((string-equal system-type "gnu/linux")       ;; Linux
+       (when (member "Ubuntu Mono" (font-family-list))
+         (set-frame-font "Ubuntu Mono 12" t t))))
+
 (if window-system (tool-bar-mode -1))
 (if window-system (menu-bar-mode -1))
 
@@ -33,7 +44,7 @@
 
 (reverse-im-activate "russian-computer") ;; Activate Reverse-im
 
-(global-diff-hl-mode) ;; Activate diff-hl
+(global-diff-hl-mode)   ;; Activate diff-hl
 (global-hl-todo-mode t) ;; Activate hl-todo
 
 ;;Optional: You can setup the fetch interval
