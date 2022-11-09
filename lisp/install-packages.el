@@ -14,21 +14,27 @@
 
 (setq package-enable-at-startup nil)
 
-(setq clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity cyberpunk-theme diff-hl
-                                     disaster elisp-format elm-mode elpher epresent find-file-in-repository
-                                     flycheck gradle-mode haskell-mode hl-todo js2-mode lolcat lsp-metals
-                                     lsp-mode lsp-ui magit mastodon nasm-mode nyan-mode package-lint
-                                     pacmacs paredit php-mode plan9-theme posframe py-autopep8 python-mode
-                                     racket-mode rainbow-delimiters reddigg reverse-im rust-mode sbt-mode
-                                     scala-mode solidity-mode treemacs twtxt zig-mode))
+(setq clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity cyberpunk-theme
+                                     diff-hl disaster elisp-format elm-mode elpher epresent
+                                     find-file-in-repository flycheck gradle-mode haskell-mode
+                                     hl-todo js2-mode lolcat lsp-metals lsp-mode lsp-ui magit
+                                     mastodon nasm-mode nyan-mode package-lint pacmacs paredit
+                                     php-mode plan9-theme posframe py-autopep8 python-mode
+                                     racket-mode rainbow-delimiters reddigg reverse-im rust-mode
+                                     sbt-mode scala-mode solidity-mode treemacs twtxt zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."
   (interactive)
-  (package-refresh-contents)
+  (unless package-archive-contents (package-refresh-contents))
   (mapc #'(lambda (package)
             (unless (package-installed-p package)
               (package-install package))) clover-packages-list))
+
+(defun clover-refresh-package ()
+  "Forced package refresh contents."
+  (interactive)
+  (package-refresh-contents))
 
 (defun clover-clear-packages ()
   "Clears the Emacs folder."
