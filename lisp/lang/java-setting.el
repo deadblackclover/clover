@@ -7,23 +7,24 @@
 
 ;;; Code:
 (require 'gradle-mode)
-(add-hook 'java-mode-hook (lambda() 
+
+(add-hook 'java-mode-hook (lambda()
                              (gradle-mode 1)))
 
-(defun clover-new-java () 
-  "Create a Java file." 
-  (interactive) 
-  (switch-to-buffer (get-buffer-create "untitled.java")) 
-  (setq initial-major-mode (quote java-mode)) 
+(defun clover-new-java ()
+  "Create a Java file."
+  (interactive)
+  (switch-to-buffer (get-buffer-create "untitled.java"))
+  (setq initial-major-mode (quote java-mode))
   (funcall initial-major-mode))
 
-(defun clover-build-and-run-java () 
-  "Build and run Java project." 
-  (interactive) 
+(defun clover-build-and-run-java ()
+  "Build and run Java project."
+  (interactive)
   (gradle-run "build run"))
 
 ;; Run
-(add-hook 'java-mode-hook (lambda () 
+(add-hook 'java-mode-hook (lambda ()
                             (define-key java-mode-map (kbd "<f5>") 'clover-build-and-run-java)))
 
 (provide 'java-setting)
