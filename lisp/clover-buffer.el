@@ -6,9 +6,11 @@
 ;;; Commentary:
 
 ;;; Code:
+(require 'recentf)
+
 (setq inhibit-startup-message t)
 
-(setq clover-logo "
+(defvar clover-logo "
 
            88
            88
@@ -21,17 +23,17 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 ")
 
-(setq clover-recent-files (mapcar (lambda (item)
+(defvar clover-recent-files (mapcar (lambda (item)
                                     (format "[[file:%s][%s]]\n" item item)) recentf-list))
 
-(setq clover-recent-files-view (format "
+(defvar clover-recent-files-view (format "
 
 
 Recent files
 %s
 " (mapconcat 'identity clover-recent-files "")))
 
-(setq clover-links "
+(defvar clover-links "
 [[https://github.com/deadblackclover/clover][Source code]]
 [[https://github.com/deadblackclover/clover/releases][Releases]]
 [[https://github.com/deadblackclover][DEADBLACKCLOVER]]
