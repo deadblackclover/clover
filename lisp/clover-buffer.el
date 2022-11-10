@@ -11,7 +11,8 @@
 
 (setq inhibit-startup-message t)
 
-(defvar clover-logo "
+(defvar clover-logo
+"
 
            88
            88
@@ -26,18 +27,21 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 ;; Recent files
 (defvar clover-rf (mapcar (lambda (item)
-                                      (format "[[file:%s][%s]]\n" item item)) recentf-list))
+                            (format "[[file:%s][%s]]\n" item item)) recentf-list))
 
-(defvar clover-rf-last10 (cl-subseq clover-rf 0 5))
+(defvar clover-rf-last5 (cond ((> (length clover-rf) 5)
+                               (cl-subseq clover-rf 0 5))
+                              (t clover-rf)))
 
 (defvar clover-rf-view (format "
 
 
 Recent files
 %s
-" (mapconcat 'identity clover-rf-last10 "")))
+" (mapconcat 'identity clover-rf-last5 "")))
 
-(defvar clover-links "
+(defvar clover-links
+"
 [[https://github.com/deadblackclover/clover][Source code]]
 [[https://github.com/deadblackclover/clover/releases][Releases]]
 [[https://github.com/deadblackclover][DEADBLACKCLOVER]]
@@ -47,9 +51,9 @@ Recent files
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert "#+STARTUP: inlineimages\n")
 (insert (format "[[%simg/clover.png]] [[%simg/key.png]] [[%simg/cipher.png]]"
-                clover-path
-                clover-path
-                clover-path))
+                user-emacs-directory
+                user-emacs-directory
+                user-emacs-directory))
 (insert clover-logo)
 (insert (format "Clover version: %s\nGNU Emacs v%s (build %s, %s)"
                 clover-version
@@ -58,7 +62,9 @@ Recent files
                 system-configuration))
 (insert clover-rf-view)
 (insert clover-links)
-(insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]" clover-path clover-path))
+(insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]"
+                user-emacs-directory
+                user-emacs-directory))
 (org-mode)
 (goto-char (point-min))
 
