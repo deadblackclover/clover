@@ -6,6 +6,7 @@
 ;;; Commentary:
 
 ;;; Code:
+(require 'cl-lib)
 (require 'recentf)
 
 (setq inhibit-startup-message t)
@@ -23,15 +24,18 @@ a8'     '' 88 a8'     '8a `8b     d8' a8P_____88 88P'   'Y8
 
 ")
 
-(defvar clover-recent-files (mapcar (lambda (item)
-                                    (format "[[file:%s][%s]]\n" item item)) recentf-list))
+;; Recent files
+(defvar clover-rf (mapcar (lambda (item)
+                                      (format "[[file:%s][%s]]\n" item item)) recentf-list))
 
-(defvar clover-recent-files-view (format "
+(defvar clover-rf-last10 (cl-subseq clover-rf 0 5))
+
+(defvar clover-rf-view (format "
 
 
 Recent files
 %s
-" (mapconcat 'identity clover-recent-files "")))
+" (mapconcat 'identity clover-rf-last10 "")))
 
 (defvar clover-links "
 [[https://github.com/deadblackclover/clover][Source code]]
@@ -52,11 +56,11 @@ Recent files
                 emacs-version
                 emacs-build-number
                 system-configuration))
-(insert clover-recent-files-view)
+(insert clover-rf-view)
 (insert clover-links)
 (insert (format "[[%simg/hacker.png]] [[%simg/emacs.png]]" clover-path clover-path))
 (org-mode)
-(beginning-of-buffer)
+(goto-char (point-min))
 
 (provide 'clover-buffer)
 ;;; clover-buffer.el ends here
