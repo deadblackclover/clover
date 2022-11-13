@@ -14,8 +14,8 @@
 
 (setq package-enable-at-startup nil)
 
-(setq clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity cyberpunk-theme
-                                     diff-hl disaster elisp-format elm-mode elpher epresent
+(defvar clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity diff-hl
+                                     disaster ef-themes elisp-format elm-mode elpher epresent
                                      find-file-in-repository flycheck gradle-mode haskell-mode
                                      hl-todo js2-mode lolcat lsp-metals lsp-mode lsp-ui magit
                                      mastodon nasm-mode nyan-mode package-lint pacmacs paredit
