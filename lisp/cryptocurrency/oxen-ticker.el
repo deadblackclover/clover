@@ -36,12 +36,12 @@
   "https://api.coingecko.com/api/v3/simple/price?ids=loki-network&vs_currencies=usd")
 
 (defcustom oxen-ticker-api-poll-interval 10
-  "Default interval to poll to the bitstamp api."
+  "Default interval to poll to the coingecko api."
   :type 'number
   :group 'oxen-ticker)
 
 (defvar oxen-ticker-timer nil
-  "Cryptonator API poll timer.")
+  "CoinGecko API poll timer.")
 
 (defvar oxen-ticker-mode-line " $0.00"
   "Displayed on mode-line.")

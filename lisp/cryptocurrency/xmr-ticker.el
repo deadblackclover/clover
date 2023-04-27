@@ -37,12 +37,12 @@
   "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd")
 
 (defcustom xmr-ticker-api-poll-interval 10
-  "Default interval to poll to the bitstamp api."
+  "Default interval to poll to the coingecko api."
   :type 'number
   :group 'xmr-ticker)
 
 (defvar xmr-ticker-timer nil
-  "Bitstamp API poll timer.")
+  "CoinGecko API poll timer.")
 
 (defvar xmr-ticker-mode-line " $0.00"
   "Displayed on mode-line.")
