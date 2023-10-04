@@ -29,10 +29,10 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(display-battery-mode 1) ;; battery status
-(global-linum-mode t)	 ;; global line mode
-(display-time-mode 1)	 ;; display time
-(scroll-bar-mode -1)	 ;; disable scroll bars
+(display-battery-mode 1)             ;; battery status
+(global-display-line-numbers-mode 1) ;; global line mode
+(display-time-mode 1)                ;; display time
+(scroll-bar-mode -1)                 ;; disable scroll bars
 
 (setq column-number-mode t) ;; Column and line
 
