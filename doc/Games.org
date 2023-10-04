@@ -1,24 +1,24 @@
 * Games
 
-|---------------------------+----------------------------------------------------------|
-|Command                    |Comment                                                   |
-|---------------------------+----------------------------------------------------------|
-|5x5                        |Fill in all the squares                                   |
-|animate-birthday-present   |Make text dance                                           |
-|blackbox                   |Find objects by firing beams into a black box             |
-|decipher                   |Help for cracking a simple alphabetic substitution cipher |
-|dissociated-press          |Fun with gibberish                                        |
-|doctor                     |Psychological help from a Rogerian analyst                |
-|dunnet                     |Text-mode dungeon adventure game                          |
-|gomoku                     |Five-in-a-row against the computer                        |
-|hanoi                      |Computer solving the towers of hanoi game                 |
-|life                       |John Conway’s game of life                                |
-|morse-region               |Convert text to and from morse code                       |
-|mpuz                       |Multiplication puzzle (hidden digits)                     |
-|pong                       |Two-player computerized ping-pong                         |
-|snake                      |Guide a snake around the screen, eat to grow              |
-|solitaire                  |Balls on an 8x8 cross shaped grid                         |
-|studlify-region            |Convert text to stUdlY caps                               |
-|tetris                     |Arrange falling blocks                                    |
-|pacmacs                    |Pacman for Emacs                                          |
-|---------------------------+----------------------------------------------------------|
+|--------------------------+-----------------------------------------------------------|
+| Command                  | Comment                                                   |
+|--------------------------+-----------------------------------------------------------|
+| 5x5                      | Fill in all the squares                                   |
+| animate-birthday-present | Make text dance                                           |
+| blackbox                 | Find objects by firing beams into a black box             |
+| decipher                 | Help for cracking a simple alphabetic substitution cipher |
+| dissociated-press        | Fun with gibberish                                        |
+| doctor                   | Psychological help from a Rogerian analyst                |
+| dunnet                   | Text-mode dungeon adventure game                          |
+| gomoku                   | Five-in-a-row against the computer                        |
+| hanoi                    | Computer solving the towers of hanoi game                 |
+| life                     | John Conway’s game of life                                |
+| morse-region             | Convert text to and from morse code                       |
+| mpuz                     | Multiplication puzzle (hidden digits)                     |
+| pong                     | Two-player computerized ping-pong                         |
+| snake                    | Guide a snake around the screen, eat to grow              |
+| solitaire                | Balls on an 8x8 cross shaped grid                         |
+| studlify-region          | Convert text to stUdlY caps                               |
+| tetris                   | Arrange falling blocks                                    |
+| pacmacs                  | Pacman for Emacs                                          |
+|--------------------------+-----------------------------------------------------------|
