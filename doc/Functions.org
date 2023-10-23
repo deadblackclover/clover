@@ -1,26 +1,27 @@
 * Functions
 
-|-----------------------------+--------------------------------|
-| Name                        | Comment                        |
-|-----------------------------+--------------------------------|
-| clover-build-and-run-java   | Build and run Java project     |
-| clover-c-compile            | Compile C file                 |
-| clover-c++-compile          | Compile C++ file               |
-| clover-clear-packages       | Clears the Emacs packages      |
-| clover-install-packages     | Auto install packages          |
-| clover-new-c                | Create a C file                |
-| clover-new-c++              | Create a C++ file              |
-| clover-new-java             | Create a Java file             |
-| clover-new-node             | Create a Node.js file          |
-| clover-new-python           | Create a Python file           |
-| clover-new-racket           | Create a Racket file           |
-| clover-new-rust             | Create a Rust file             |
-| clover-new-scala            | Create a Scala file            |
-| clover-new-scratch          | Creates a new *scratch* buffer |
-| clover-new-scratch-org-mode | Creates a new *scratch* buffer |
-| clover-node-run             | Run Node.js file               |
-| clover-python-run           | Run Python file                |
-| clover-update               | Update clover                  |
-| clover-set-transparency     | Set the window strength        |
-| clover-unset-transparency   | Unset the window strength      |
-|-----------------------------+--------------------------------|
+|-----------------------------+---------------------------------|
+| Name                        | Comment                         |
+|-----------------------------+---------------------------------|
+| clover-build-and-run-java   | Build and run Java project      |
+| clover-c-compile            | Compile C file                  |
+| clover-c++-compile          | Compile C++ file                |
+| clover-clear-packages       | Clears the Emacs packages       |
+| clover-install-packages     | Auto install packages           |
+| clover-refresh-package      | Forced package refresh contents |
+| clover-new-c                | Create a C file                 |
+| clover-new-c++              | Create a C++ file               |
+| clover-new-java             | Create a Java file              |
+| clover-new-node             | Create a Node.js file           |
+| clover-new-python           | Create a Python file            |
+| clover-new-racket           | Create a Racket file            |
+| clover-new-rust             | Create a Rust file              |
+| clover-new-scala            | Create a Scala file             |
+| clover-new-scratch          | Creates a new *scratch* buffer  |
+| clover-new-scratch-org-mode | Creates a new *scratch* buffer  |
+| clover-node-run             | Run Node.js file                |
+| clover-python-run           | Run Python file                 |
+| clover-update               | Update clover                   |
+| clover-set-transparency     | Set the window strength         |
+| clover-unset-transparency   | Unset the window strength       |
+|-----------------------------+---------------------------------|
