@@ -9,11 +9,13 @@
 (require 'treemacs)
 
 ;; File
-(global-set-key (kbd "C-o") 'find-file)              ;; Open file
-(global-set-key (kbd "C-s") 'save-buffer)            ;; Save file
-(global-set-key (kbd "C-w") 'kill-buffer)            ;; Close buffer
-(global-set-key (kbd "C-f") 'isearch-forward-regexp) ;; Search buffer
-(global-set-key (kbd "C-x f") 'xah-find-text-regex)  ;; Search in project
+(global-set-key (kbd "C-o") 'find-file)               ;; Open file
+(global-set-key (kbd "C-s") 'save-buffer)             ;; Save file
+(global-set-key (kbd "C-w") 'kill-buffer)             ;; Close buffer
+(global-set-key (kbd "C-f") 'isearch-forward-regexp)  ;; Search buffer
+(global-set-key (kbd "C->") 'isearch-repeat-forward)  ;; Move to the next occurrence
+(global-set-key (kbd "C-<") 'isearch-repeat-backward) ;; Move to the previous occurrence
+(global-set-key (kbd "C-c f") 'xah-find-text-regex)   ;; Search in project
 
 ;; Copy Paste
 ;; (global-set-key (kbd "C-z") 'undo)
@@ -26,7 +28,7 @@
 (global-set-key (kbd "C-a") 'mark-whole-buffer)
 
 ;; Git status
-(global-set-key (kbd "C-x C-s") 'magit-status)
+(global-set-key (kbd "C-c g s") 'magit-status)
 
 ;; New scratch
 (defun clover-new-scratch ()
@@ -34,7 +36,7 @@
   (interactive)
   (switch-to-buffer (get-buffer-create "*scratch*")))
 
-(global-set-key (kbd "C-c C-s") 'clover-new-scratch)
+(global-set-key (kbd "C-c s t") 'clover-new-scratch)
 
 ;; New scratch org mode
 (defun clover-new-scratch-org-mode ()
@@ -43,7 +45,7 @@
   (switch-to-buffer (get-buffer-create "*scratch org-mode*"))
   (org-mode))
 
-(global-set-key (kbd "C-c C-o") 'clover-new-scratch-org-mode)
+(global-set-key (kbd "C-c s o") 'clover-new-scratch-org-mode)
 
 ;; New tab
 (global-set-key (kbd "C-n") 'tab-bar-new-tab)
@@ -61,7 +63,7 @@
   (insert-file-contents (concat clover-path "doc/Shortcuts.org"))
   (insert-file-contents (concat clover-path "doc/Functions.org"))
   (org-mode)
-  (beginning-of-buffer))
+  (goto-char (point-min)))
 
 (global-set-key [f1] 'clover-help)
 

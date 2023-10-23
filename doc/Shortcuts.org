@@ -17,7 +17,10 @@
 | C-o                      | find-file                 |
 | C-s                      | save-buffer               |
 | C-w                      | kill-buffer               |
-| C-f                      | isearch-forward           |
+| C-f                      | isearch-forward-regexp    |
+| C->                      | isearch-repeat-forward    |
+| C-<                      | isearch-repeat-backward   |
+| C-c f                    | xah-find-text-regex       |
 | C-z                      | undo                      |
 | C-c                      | kill-ring-save            |
 | C-x                      | kill-region               |
@@ -50,7 +53,7 @@
 |--------------------------+------------------------|
 | Shortcut (C-Ctrl, M-Alt) | Command                |
 |--------------------------+------------------------|
-| C-x C-s                  | magit-status           |
+| C-x g s                  | magit-status           |
 | C-w                      | magit-kill-this-buffer |
 |--------------------------+------------------------|
 
@@ -75,8 +78,8 @@
 |--------------------------+-----------------------------|
 | Shortcut (C-Ctrl, M-Alt) | Command                     |
 |--------------------------+-----------------------------|
-| C-c C-s                  | clover-new-scratch          |
-| C-c C-o                  | clover-new-scratch-org-mode |
+| C-c s t                  | clover-new-scratch          |
+| C-c s o                  | clover-new-scratch-org-mode |
 |--------------------------+-----------------------------|
 
 ** Lisp
