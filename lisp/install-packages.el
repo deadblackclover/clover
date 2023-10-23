@@ -11,18 +11,19 @@
 
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("cryptocurrency" . "http://cipherdogs.net/elpa-cryptocurrency/") t)
 
 (setq package-enable-at-startup nil)
 
 (defvar clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity diff-hl
-                                     disaster ef-themes elisp-format elm-mode elpher epresent
-                                     find-file-in-repository flycheck gradle-mode haskell-mode
-                                     hl-todo js2-mode kotlin-mode lolcat lsp-metals lsp-mode
-                                     lsp-ui magit mastodon nasm-mode nyan-mode package-lint
+                                     disaster dot-ticker ef-themes elisp-format elm-mode elpher
+                                     epresent find-file-in-repository flycheck gradle-mode
+                                     haskell-mode hl-todo js2-mode kotlin-mode lolcat lsp-metals
+                                     lsp-mode lsp-ui magit mastodon nasm-mode nyan-mode package-lint
                                      pacmacs paredit php-mode plan9-theme posframe py-autopep8
                                      python-mode racket-mode rainbow-delimiters reddigg reverse-im
                                      rust-mode sbt-mode scala-mode solidity-mode treemacs twtxt
-                                     zig-mode))
+                                     xmr-ticker zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."

@@ -9,7 +9,7 @@
 (require 'reverse-im)
 
 (require 'xmr-ticker)
-(require 'oxen-ticker)
+(require 'dot-ticker)
 
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
@@ -48,15 +48,15 @@
 (global-diff-hl-mode)   ;; Activate diff-hl
 (global-hl-todo-mode t) ;; Activate hl-todo
 
-;;Optional: You can setup the fetch interval
-;;default: 10 secs
+;; Optional: You can setup the fetch interval
+;; default: 10 secs
 (setq xmr-ticker-api-poll-interval 60)
-(setq oxen-ticker-api-poll-interval 60)
+(setq dot-ticker-api-poll-interval 60)
 
-;;Enable xmr-ticker-mode
+;; Enable xmr-ticker-mode
 (xmr-ticker-mode 1)
-;;Enable oxen-ticker-mode
-(oxen-ticker-mode 1)
+;; Enable dot-ticker-mode
+(dot-ticker-mode 1)
 
 (defun clover-set-transparency ()
   "Set the window strength."
