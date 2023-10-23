@@ -29,6 +29,7 @@
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+(tab-bar-mode 1)                     ;; tab bar mode
 (display-battery-mode 1)             ;; battery status
 (global-display-line-numbers-mode 1) ;; global line mode
 (display-time-mode 1)                ;; display time
