@@ -43,8 +43,6 @@
 (require 'magit-setting)
 
 ;; Language setting
-(require 'wat-mode)
-
 (require 'lisp-setting)
 (require 'c-setting)
 (require 'rust-setting)

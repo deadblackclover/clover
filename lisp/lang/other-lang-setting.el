@@ -6,6 +6,9 @@
 ;;; Commentary:
 
 ;;; Code:
+;; WebAssembly
+(require 'wat-mode)
+
 ;; FASM
 (require 'fasm-mode)
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
