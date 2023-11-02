@@ -28,8 +28,6 @@
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/lang" user-emacs-directory))
-(add-to-list 'load-path (expand-file-name "lisp/mode" user-emacs-directory))
-(add-to-list 'load-path (expand-file-name "lisp/cryptocurrency" user-emacs-directory))
 
 ;; Install packages
 (require 'install-packages)
@@ -45,6 +43,8 @@
 (require 'magit-setting)
 
 ;; Language setting
+(require 'wat-mode)
+
 (require 'lisp-setting)
 (require 'c-setting)
 (require 'rust-setting)
@@ -56,9 +56,6 @@
 
 ;; Eshell
 (require 'eshell-setting)
-
-;; xah-find
-(require 'xah-find)
 
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
