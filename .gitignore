@@ -1,6 +1,7 @@
 \#*
 *.elc
 .clover
+.clover~
 .dap-breakpoints
 .lsp-session-v1
 .cache/
