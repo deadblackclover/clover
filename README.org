@@ -1,7 +1,7 @@
 #+TITLE: Clover
 
 [[https://img.shields.io/github/v/release/deadblackclover/clover.svg?style=flat-square]]
-[[https://img.shields.io/badge/GNU%20Emacs-28.2-b48ead.svg?style=flat-square]]
+[[https://img.shields.io/badge/GNU%20Emacs-29.1-b48ead.svg?style=flat-square]]
 [[https://img.shields.io/github/last-commit/deadblackclover/clover.svg?style=flat-square]]
 
 Emacs for real hackers
