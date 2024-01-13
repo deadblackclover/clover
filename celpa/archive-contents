@@ -1,0 +1,8 @@
+(1
+  (xah-find . [(4 3 20210925094548) nil "Find replace in pure emacs lisp. Purpose similar to grep/sed" single])
+  (fasm-mode . [(0 1 11) nil "Fasm major mode" single])
+  (wat-mode . [(1 0 0) nil "A major mode for WebAssembly" tar])
+  (dot-ticker . [(1 0 0) nil "Emacs minor-mode to display current Polkadot price on the mode-line" single])
+  (xmr-ticker . [(1 0 0) nil "Emacs minor-mode to display current Monero price on the mode-line" single])
+  (oxen-ticker . [(1 0 0) nil "Emacs minor-mode to display current Oxen price on the mode-line" single])
+)

@@ -11,8 +11,7 @@
 
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("cryptocurrency" . "https://cipherdogs.net/elpa-cryptocurrency/") t)
-(add-to-list 'package-archives '("cdelpa" . "https://cipherdogs.net/cdelpa/") t)
+(add-to-list 'package-archives '("local-dir" . "~/.emacs.d/celpa") t)
 
 (setq package-enable-at-startup nil)
 
