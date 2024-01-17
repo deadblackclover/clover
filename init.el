@@ -63,7 +63,7 @@
 (setq-default indent-tabs-mode nil) ;; No tabs
 
 (add-hook 'after-init-hook (lambda ()
-                             (load-theme 'ef-winter t)))
+                             (load-theme 'ef-tritanopia-dark t)))
 
 (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
 
