@@ -9,7 +9,7 @@
 (package-initialize)
 
 ;; Global Variables
-(setq clover-version "v1.0.0")
+(setq clover-version "v1.0.1")
 (setq clover-path (file-name-directory (or load-file-name
                                            buffer-file-name)))
 
