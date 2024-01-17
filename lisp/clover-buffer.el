@@ -50,7 +50,7 @@ Recent files
 
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert "#+STARTUP: inlineimages\n")
-(insert (format "[[%simg/clover.png]] [[%simg/key.png]] [[%simg/cipher.png]]"
+(insert (format "[[%simg/lisp.png]] [[%simg/keyboard.png]] [[%simg/gplv3.png]]"
                 user-emacs-directory
                 user-emacs-directory
                 user-emacs-directory))
