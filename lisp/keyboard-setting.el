@@ -53,6 +53,9 @@
 ;; Close tab
 (global-set-key (kbd "C-q") 'tab-close)
 
+;; Switch to the next tab
+(global-set-key (kbd "C-TAB") 'tab-bar-switch-to-next-tab)
+
 ;; Help
 (defun clover-help ()
   "Clover help."
