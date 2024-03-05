@@ -55,6 +55,13 @@
 ;; Eshell
 (require 'eshell-setting)
 
+;; Emms
+(emms-minimalistic)
+(emms-mode-line-mode)
+(emms-playing-time-mode)
+(setq emms-player-list '(emms-player-mplayer emms-player-vlc))
+(setq emms-info-functions '(emms-info-native))
+
 ;; Setting
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files

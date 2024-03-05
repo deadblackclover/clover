@@ -49,6 +49,22 @@
 | C-c C-c                  | Evaluating Code Blocks   |
 |--------------------------+--------------------------|
 
+** Emms (Playlist mode)
+
+|--------------------------+---------------------|
+| Shortcut (C-Ctrl, M-Alt) | Command             |
+|--------------------------+---------------------|
+| f                        | emms-show           |
+| P                        | emms-pause          |
+| s                        | emms-stop           |
+| n                        | emms-next           |
+| p                        | emms-previous       |
+| r                        | emms-random         |
+| >                        | emms-seek-forward   |
+| <                        | emms-seek-backward  |
+| C                        | emms-playlist-clear |
+|--------------------------+---------------------|
+
 ** Git
 
 |--------------------------+------------------------|
