@@ -11,6 +11,8 @@
 (require 'xmr-ticker)
 (require 'dot-ticker)
 
+(require 'emms-playing-time)
+
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
 ;; Set default font
@@ -53,11 +55,6 @@
 (setq xmr-ticker-api-poll-interval 60)
 (setq dot-ticker-api-poll-interval 60)
 
-;; Enable xmr-ticker-mode
-(xmr-ticker-mode 1)
-;; Enable dot-ticker-mode
-(dot-ticker-mode 1)
-
 (defun clover-set-transparency ()
   "Set the window strength."
   (interactive)
@@ -67,6 +64,27 @@
   "Unset the window strength."
   (interactive)
   (set-frame-parameter (selected-frame) 'alpha '(100 . 100)))
+
+(defun clover-crypto-mode-enable ()
+  "Enable crypto modes."
+  (interactive)
+  (xmr-ticker-mode 1)
+  (dot-ticker-mode 1))
+
+(defun clover-crypto-mode-disable ()
+  "Disable crypto modes."
+  (interactive)
+  (xmr-ticker-mode -1)
+  (dot-ticker-mode -1))
+
+(defun clover-emms-toggle ()
+  "Toggle emms modes."
+  (interactive)
+  (emms-mode-line-mode)
+  (emms-playing-time-mode))
+
+(clover-crypto-mode-enable)
+(clover-emms-toggle)
 
 (provide 'window-setting)
 ;;; window-setting.el ends here
