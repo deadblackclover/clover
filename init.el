@@ -9,9 +9,9 @@
 (package-initialize)
 
 ;; Global Variables
-(setq clover-version "v1.2.0")
-(setq clover-path (file-name-directory (or load-file-name
-                                           buffer-file-name)))
+(defvar clover-version "v1.3.0")
+(defvar clover-path (file-name-directory (or load-file-name
+                                             buffer-file-name)))
 
 (defun clover-reload-configuration ()
   "Reload configuration."
