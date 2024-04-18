@@ -41,6 +41,7 @@
 (require 'keyboard-setting)
 (require 'whitespace-setting)
 (require 'magit-setting)
+(require 'emms-setting)
 
 ;; Language setting
 (require 'lisp-setting)

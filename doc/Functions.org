@@ -28,4 +28,5 @@
 | clover-crypto-mode-enable   | Enable crypto modes             |
 | clover-crypto-mode-disable  | Disable crypto modes            |
 | clover-emms-toggle          | Toggle emms modes               |
+| clover-emms-add-directory   | Emms add directory              |
 |-----------------------------+---------------------------------|
