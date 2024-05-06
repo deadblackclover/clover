@@ -15,17 +15,22 @@
 
 (setq package-enable-at-startup nil)
 
-(defvar clover-packages-list '(c-eldoc ag cargo clojure-mode company company-solidity diff-hl
-                                     disaster dot-ticker ef-themes elisp-format elm-mode elpher
-                                     emms epresent fasm-mode find-file-in-repository flycheck
-                                     gradle-mode haskell-mode hl-todo js2-mode kotlin-mode
-                                     lolcat lsp-metals lsp-mode lsp-ui magit mastodon move-mode
-                                     multiple-cursors nasm-mode nyan-mode package-lint pacmacs
-                                     paredit php-mode plan9-theme posframe py-autopep8
-                                     python-mode racket-mode rainbow-delimiters reddigg
-                                     reverse-im rust-mode sbt-mode scala-mode solidity-mode
-                                     treemacs tuareg twtxt wat-mode xah-find xmr-ticker
-                                     zig-mode))
+(defvar clover-packages-list '(c-eldoc ag cargo cider clojure-mode company
+                                       company-solidity diff-hl disaster
+                                       dot-ticker ef-themes elisp-format
+                                       elm-mode elpher emms epresent fasm-mode
+                                       find-file-in-repository flycheck
+                                       gradle-mode haskell-mode hl-todo js2-mode
+                                       kotlin-mode lolcat lsp-metals lsp-mode
+                                       lsp-ui magit mastodon move-mode
+                                       multiple-cursors nasm-mode nyan-mode
+                                       package-lint pacmacs paredit php-mode
+                                       plan9-theme posframe py-autopep8
+                                       python-mode racket-mode
+                                       rainbow-delimiters reddigg reverse-im
+                                       rust-mode sbt-mode scala-mode
+                                       solidity-mode treemacs tuareg twtxt
+                                       wat-mode xah-find xmr-ticker zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."
