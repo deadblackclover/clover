@@ -6,12 +6,8 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'reverse-im)
-
-(require 'xmr-ticker)
-(require 'dot-ticker)
-
 (require 'emms-playing-time)
+(require 'reverse-im)
 
 (setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
 
@@ -50,11 +46,6 @@
 (global-diff-hl-mode)   ;; Activate diff-hl
 (global-hl-todo-mode t) ;; Activate hl-todo
 
-;; Optional: You can setup the fetch interval
-;; default: 10 secs
-(setq xmr-ticker-api-poll-interval 60)
-(setq dot-ticker-api-poll-interval 60)
-
 (defun clover-set-transparency ()
   "Set the window strength."
   (interactive)
@@ -65,25 +56,12 @@
   (interactive)
   (set-frame-parameter (selected-frame) 'alpha '(100 . 100)))
 
-(defun clover-crypto-mode-enable ()
-  "Enable crypto modes."
-  (interactive)
-  (xmr-ticker-mode 1)
-  (dot-ticker-mode 1))
-
-(defun clover-crypto-mode-disable ()
-  "Disable crypto modes."
-  (interactive)
-  (xmr-ticker-mode -1)
-  (dot-ticker-mode -1))
-
 (defun clover-emms-toggle ()
   "Toggle emms modes."
   (interactive)
   (emms-mode-line-mode)
   (emms-playing-time-mode))
 
-(clover-crypto-mode-enable)
 (clover-emms-toggle)
 
 (provide 'window-setting)
