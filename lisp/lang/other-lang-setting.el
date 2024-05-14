@@ -13,10 +13,6 @@
 (require 'fasm-mode)
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . fasm-mode))
 
-;; RIDE
-(require 'scala-mode)
-(add-to-list 'auto-mode-alist '("\\.ride\\'" . scala-mode))
-
 ;; ZoKrates, Vyper
 (require 'python-mode)
 (add-to-list 'auto-mode-alist '("\\.zok\\'" . python-mode))

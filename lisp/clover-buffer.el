@@ -44,18 +44,18 @@ Recent files
 "
 [[https://github.com/deadblackclover/clover][Source code]]
 [[https://github.com/deadblackclover/clover/releases][Releases]]
-[[https://github.com/deadblackclover][DEADBLACKCLOVER]]
-[[https://github.com/deadblackclover/clover/blob/master/LICENSE][GNU GPL-3.0]]
+[[https://deadblackclover.net/][DEADBLACKCLOVER]]
+[[https://www.gnu.org/licenses/gpl-3.0.en.html][GNU GPL-3.0]]
 ")
 
 (switch-to-buffer (get-buffer-create "*clover*"))
 (insert "#+STARTUP: inlineimages\n")
-(insert (format "[[%simg/lisp.png]] [[%simg/keyboard.png]] [[%simg/gplv3.png]]"
+(insert (format "[[%simg/lisp.png]] [[%simg/keyboard.png]] [[%simg/gplv3.png]]\n"
                 user-emacs-directory
                 user-emacs-directory
                 user-emacs-directory))
 (insert clover-logo)
-(insert (format "Clover version: %s\nGNU Emacs v%s (build %s, %s)"
+(insert (format "\nClover version: %s\nGNU Emacs v%s (build %s, %s)"
                 clover-version
                 emacs-version
                 emacs-build-number
