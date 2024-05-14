@@ -42,16 +42,7 @@
 (require 'whitespace-setting)
 (require 'magit-setting)
 (require 'emms-setting)
-
-;; Language setting
-(require 'lisp-setting)
-(require 'c-setting)
-(require 'rust-setting)
-(require 'python-setting)
-(require 'node-setting)
-(require 'scala-setting)
-(require 'java-setting)
-(require 'other-lang-setting)
+(require 'lang-setting)
 
 ;; Eshell
 (require 'eshell-setting)
