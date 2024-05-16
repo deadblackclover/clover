@@ -23,11 +23,11 @@
                                        js2-mode kotlin-mode lolcat lsp-metals
                                        lsp-mode lsp-ui magit mastodon move-mode
                                        multiple-cursors nasm-mode nyan-mode
-                                       package-lint pacmacs paredit php-mode
-                                       plan9-theme posframe prettier-elisp
-                                       py-autopep8 python-mode racket-mode
-                                       rainbow-delimiters reddigg reverse-im
-                                       rust-mode sbt-mode scala-mode
+                                       org-view-mode package-lint pacmacs
+                                       paredit php-mode plan9-theme posframe
+                                       prettier-elisp py-autopep8 python-mode
+                                       racket-mode rainbow-delimiters reddigg
+                                       reverse-im rust-mode sbt-mode scala-mode
                                        solidity-mode treemacs tuareg twtxt
                                        wat-mode xah-find zig-mode))
 

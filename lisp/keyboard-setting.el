@@ -72,6 +72,7 @@
   (insert-file-contents (concat clover-path "doc/Shortcuts.org"))
   (insert-file-contents (concat clover-path "doc/Functions.org"))
   (org-mode)
+  (org-view-mode)
   (goto-char (point-min)))
 
 (global-set-key [f1] 'clover-help)

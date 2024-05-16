@@ -36,7 +36,7 @@
 ;; Temporary solution to the problem in lsp-metals
 (require 'treemacs-extensions)
 
-(require 'clover-buffer)
+(require 'clover-dashboard)
 (require 'window-setting)
 (require 'keyboard-setting)
 (require 'whitespace-setting)
@@ -56,6 +56,8 @@
 (setq make-backup-files nil) ;; stop creating backup~ files
 (setq auto-save-default nil) ;; stop creating #autosave# files
 (setq create-lockfiles nil)  ;; stop creating .#lock files
+
+(setq inhibit-startup-message t) ;; Disables the start screen
 
 (setq-default indent-tabs-mode nil) ;; No tabs
 
@@ -85,6 +87,9 @@
 
 ;; Activate flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; Open dashboard
+(clover-dashboard-open)
 
 (provide 'init)
 ;;; init.el ends here
