@@ -1,5 +1,6 @@
 (1
-  (xah-find . [(4 3 20210925094548) nil "Find replace in pure emacs lisp. Purpose similar to grep/sed" single])
   (fasm-mode . [(0 1 11) nil "Fasm major mode" single])
+  (prettier-elisp . [(0 2 0) nil "Minor mode to format emacs lisp code" single])
   (wat-mode . [(1 0 0) nil "A major mode for WebAssembly" tar])
+  (xah-find . [(4 3 20210925094548) nil "Find replace in pure emacs lisp. Purpose similar to grep/sed" single])
 )

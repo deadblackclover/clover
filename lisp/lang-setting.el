@@ -101,19 +101,10 @@
 (add-hook 'emacs-lisp-mode-hook (lambda ()
                                   (define-key emacs-lisp-mode-map (kbd "<f5>") 'eval-buffer)))
 
-;; elisp-format-buffer
+;; prettier-elisp-buffer
 (add-hook 'emacs-lisp-mode-hook (lambda ()
                                   (define-key emacs-lisp-mode-map (kbd "C-i")
-                                    'elisp-format-buffer)))
-
-(add-hook 'lisp-mode-hook (lambda ()
-                            (define-key lisp-mode-map (kbd "C-i") 'elisp-format-buffer)))
-
-(add-hook 'scheme-mode-hook (lambda ()
-                              (define-key scheme-mode-map (kbd "C-i") 'elisp-format-buffer)))
-
-(add-hook 'racket-mode-hook (lambda ()
-                              (define-key racket-mode-map (kbd "C-i") 'elisp-format-buffer)))
+                                    'prettier-elisp-buffer)))
 
 ;; ElDoc
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
