@@ -9,7 +9,7 @@
 (package-initialize)
 
 ;; Global Variables
-(defvar clover-version "v1.5.0")
+(defvar clover-version "v1.6.0")
 (defvar clover-path (file-name-directory (or load-file-name
                                              buffer-file-name)))
 
