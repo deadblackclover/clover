@@ -1,5 +1,5 @@
 ;;; install-packages.el --- Install packages
-;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
+;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
@@ -27,9 +27,9 @@
                                        paredit php-mode plan9-theme posframe
                                        prettier-elisp py-autopep8 python-mode
                                        racket-mode rainbow-delimiters reddigg
-                                       reverse-im rust-mode sbt-mode scala-mode
-                                       solidity-mode treemacs tuareg twtxt
-                                       wat-mode xah-find zig-mode))
+                                       reverse-im ride-mode rust-mode sbt-mode
+                                       scala-mode solidity-mode treemacs tuareg
+                                       twtxt wat-mode xah-find zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."
