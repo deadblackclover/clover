@@ -9,7 +9,8 @@
 (require 'magit)
 
 (add-hook 'magit-mode-hook (lambda ()
-                           (define-key magit-mode-map (kbd "C-w") 'magit-kill-this-buffer)))
+                             (define-key magit-mode-map (kbd "C-w")
+                                         'magit-kill-this-buffer)))
 
 (provide 'magit-setting)
 ;;; magit-setting.el ends here

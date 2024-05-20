@@ -1,5 +1,5 @@
 ;;; init.el --- Init file
-;;; Copyright (c) 2019-2020, DEADBLACKCLOVER. This file is
+;;; Copyright (c) 2019, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 
@@ -13,58 +13,66 @@
 (defvar clover-path (file-name-directory (or load-file-name
                                              buffer-file-name)))
 
-(defun clover-reload-configuration ()
-  "Reload configuration."
-  (interactive)
-  (load-file (concat user-emacs-directory "init.el")))
+(add-to-list 'load-path (expand-file-name "lisp"
+                                          user-emacs-directory))
+
+(add-to-list 'load-path (expand-file-name "lisp/lang"
+                                          user-emacs-directory))
+
+(require 'clover-dashboard)
+(require 'emms-setting)
+(require 'eshell-setting)
+(require 'install-packages)
+(require 'keyboard-setting)
+(require 'lang-setting)
+(require 'magit-setting)
+(require 'whitespace-setting)
+(require 'window-setting)
+
+;; Installing packages if they are not installed
+(clover-install-packages)
+
+;; stop creating backup~ files
+(setq make-backup-files nil)
+
+;; stop creating #autosave# files
+(setq auto-save-default nil)
+
+;; stop creating .#lock files
+(setq create-lockfiles nil)
+
+;; Disables the start screen
+(setq inhibit-startup-message t)
+
+;; No tabs
+(setq-default indent-tabs-mode nil)
+
+;; Load theme
+(add-hook 'after-init-hook (lambda ()
+                             (load-theme 'ef-tritanopia-dark t)))
 
 ;; Custom file
 (setq custom-file (concat clover-path ".clover"))
 (write-region "" nil custom-file)
 (load custom-file)
 
+;; Emms setup
+(emms-minimalistic)
+
+;; Players used by Emms
+(setq emms-player-list '(emms-player-mplayer emms-player-vlc))
+
+;; Getting minimal information about the track
+(setq emms-info-functions '(emms-info-native))
+
 ;; Recent files
 (recentf-mode 1)
-
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(add-to-list 'load-path (expand-file-name "lisp/lang" user-emacs-directory))
-
-;; Install packages
-(require 'install-packages)
-(clover-install-packages)
 
 ;; Temporary solution to the problem in lsp-metals
 (require 'treemacs-extensions)
 
-(require 'clover-dashboard)
-(require 'window-setting)
-(require 'keyboard-setting)
-(require 'whitespace-setting)
-(require 'magit-setting)
-(require 'emms-setting)
-(require 'lang-setting)
-
-;; Eshell
-(require 'eshell-setting)
-
-;; Emms
-(emms-minimalistic)
-(setq emms-player-list '(emms-player-mplayer emms-player-vlc))
-(setq emms-info-functions '(emms-info-native))
-
-;; Setting
-(setq make-backup-files nil) ;; stop creating backup~ files
-(setq auto-save-default nil) ;; stop creating #autosave# files
-(setq create-lockfiles nil)  ;; stop creating .#lock files
-
-(setq inhibit-startup-message t) ;; Disables the start screen
-
-(setq-default indent-tabs-mode nil) ;; No tabs
-
-(add-hook 'after-init-hook (lambda ()
-                             (load-theme 'ef-tritanopia-dark t)))
-
-(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+(autoload 'enable-paredit-mode "paredit"
+  "Turn on pseudo-structural editing of Lisp code." t)
 
 ;; Company
 (add-hook 'after-init-hook    'global-company-mode)
@@ -90,6 +98,11 @@
 
 ;; Open dashboard
 (clover-dashboard-open)
+
+(defun clover-reload-configuration ()
+  "Reload configuration."
+  (interactive)
+  (load-file (concat user-emacs-directory "init.el")))
 
 (provide 'init)
 ;;; init.el ends here

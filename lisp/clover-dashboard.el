@@ -1,5 +1,5 @@
-;;; clover-dashboard.el --- Clover buffer
-;;; Copyright (c) 2019-2024, DEADBLACKCLOVER. This file is
+;;; clover-dashboard.el --- Clover dashboard
+;;; Copyright (c) 2024, DEADBLACKCLOVER. This file is
 ;;; licensed under the GNU General Public License version 3 or later. See
 ;;; the LICENSE file.
 

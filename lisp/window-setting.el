@@ -8,17 +8,19 @@
 ;;; Code:
 (require 'emms-playing-time)
 (require 'reverse-im)
+(require 'treemacs)
 
-(setq-default frame-title-format (concat "%b - Happy Hacking! - Clover " clover-version))
+(setq-default frame-title-format
+              (concat "%b - Happy Hacking! - Clover " clover-version))
 
 ;; Set default font
-(cond ((string-equal system-type "windows-nt")      ;; Microsoft Windows
+(cond ((string-equal system-type "windows-nt") ;; Microsoft Windows
        (when (member "Consolas" (font-family-list))
          (set-frame-font "Consolas" t t)))
-      ((string-equal system-type "darwin")          ;; MacOS
+      ((string-equal system-type "darwin") ;; MacOS
        (when (member "Menlo" (font-family-list))
          (set-frame-font "Menlo" t t)))
-      ((string-equal system-type "gnu/linux")       ;; Linux
+      ((string-equal system-type "gnu/linux") ;; Linux
        (when (member "Ubuntu Mono" (font-family-list))
          (set-frame-font "Ubuntu Mono 12" t t))))
 
@@ -33,18 +35,26 @@
 (display-time-mode 1)                ;; display time
 (scroll-bar-mode -1)                 ;; disable scroll bars
 
-(setq column-number-mode t) ;; Column and line
+;; Column and line
+(setq column-number-mode t)
 
-(set-default 'truncate-lines t) ;; Truncate line
+;; Truncate line
+(set-default 'truncate-lines t)
 
-(nyan-mode) ;; Activate nyan-mode
+;; Activate nyan-mode
+(nyan-mode)
 
-(treemacs-git-mode 'deferred) ;; Activate git mode for treemacs
+;; Activate git mode for treemacs
+(treemacs-git-mode 'deferred)
 
-(reverse-im-activate "russian-computer") ;; Activate Reverse-im
+;; Activate Reverse-im
+(reverse-im-activate "russian-computer")
 
-(global-diff-hl-mode)   ;; Activate diff-hl
-(global-hl-todo-mode t) ;; Activate hl-todo
+;; Activate diff-hl
+(global-diff-hl-mode)
+
+;; Activate hl-todo
+(global-hl-todo-mode t)
 
 (defun clover-set-transparency ()
   "Set the window strength."
