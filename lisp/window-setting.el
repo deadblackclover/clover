@@ -8,7 +8,6 @@
 ;;; Code:
 (require 'emms-playing-time)
 (require 'reverse-im)
-(require 'treemacs)
 
 (setq-default frame-title-format
               (concat "%b - Happy Hacking! - Clover " clover-version))
@@ -43,9 +42,6 @@
 
 ;; Activate nyan-mode
 (nyan-mode)
-
-;; Activate git mode for treemacs
-(treemacs-git-mode 'deferred)
 
 ;; Activate Reverse-im
 (reverse-im-activate "russian-computer")

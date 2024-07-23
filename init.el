@@ -19,18 +19,18 @@
 (add-to-list 'load-path (expand-file-name "lisp/lang"
                                           user-emacs-directory))
 
+;; Installing packages if they are not installed
+(require 'install-packages)
+(clover-install-packages)
+
 (require 'clover-dashboard)
 (require 'emms-setting)
 (require 'eshell-setting)
-(require 'install-packages)
 (require 'keyboard-setting)
 (require 'lang-setting)
 (require 'magit-setting)
 (require 'whitespace-setting)
 (require 'window-setting)
-
-;; Installing packages if they are not installed
-(clover-install-packages)
 
 ;; stop creating backup~ files
 (setq make-backup-files nil)
@@ -67,9 +67,6 @@
 
 ;; Recent files
 (recentf-mode 1)
-
-;; Temporary solution to the problem in lsp-metals
-(require 'treemacs-extensions)
 
 (autoload 'enable-paredit-mode "paredit"
   "Turn on pseudo-structural editing of Lisp code." t)

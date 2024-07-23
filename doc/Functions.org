@@ -13,7 +13,6 @@
 | clover-c++-compile          | Compile C++ file                |
 | clover-new-scratch          | Creates a new *scratch* buffer  |
 | clover-new-scratch-org-mode | Creates a new *scratch* buffer  |
-| clover-node-run             | Run Node.js file                |
 | clover-python-run           | Run Python file                 |
 | clover-set-transparency     | Set the window strength         |
 | clover-unset-transparency   | Unset the window strength       |

@@ -7,16 +7,19 @@
 
 ;;; Code:
 (require 'disaster)
+(require 'eglot)
 (require 'fasm-mode)
 (require 'gradle-mode)
-(require 'js2-mode)
-(require 'lsp-mode)
-(require 'lsp-metals)
 (require 'python-mode)
 (require 'racket-mode)
 (require 'rust-mode)
 (require 'scheme)
 (require 'wat-mode)
+
+;; Eglot
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '(scala-mode . ("metals"))))
 
 ;; C
 (defun clover-c-mode-hook ()
@@ -114,18 +117,6 @@
 (add-hook 'scheme-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'racket-mode-hook 'turn-on-eldoc-mode)
 
-;; Node.js
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-
-(defun clover-node-run ()
-  "Run Node.js file."
-  (interactive)
-  (compile (format "node %s" (buffer-file-name))))
-
-;; Run
-(add-hook 'js2-mode-hook (lambda ()
-                           (define-key js2-mode-map (kbd "<f5>") 'clover-node-run)))
-
 ;; Python
 (defun clover-python-run ()
   "Run Python file."
@@ -144,8 +135,7 @@
                             (define-key rust-mode-map (kbd "<f5>") 'cargo-process-run)))
 
 ;; Scala
-(add-hook 'scala-mode-hook 'lsp)
-(add-hook 'lsp-mode-hook 'lsp-lens-mode)
+(add-hook 'scala-mode-hook 'eglot-ensure)
 
 ;; Zinc
 (add-to-list 'auto-mode-alist '("\\.zn\\'" . rust-mode))

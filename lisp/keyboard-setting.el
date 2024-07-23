@@ -6,9 +6,6 @@
 ;;; Commentary:
 
 ;;; Code:
-(require 'treemacs)
-
-;; File
 (global-set-key (kbd "C-o") 'find-file)               ;; Open file
 (global-set-key (kbd "C-s") 'save-buffer)             ;; Save file
 (global-set-key (kbd "C-w") 'kill-buffer)             ;; Close buffer
@@ -17,13 +14,11 @@
 (global-set-key (kbd "C-<") 'isearch-repeat-backward) ;; Move to the previous occurrence
 (global-set-key (kbd "C-c f") 'xah-find-text-regex)   ;; Search in project
 
-;; Ignore
 (global-set-key (kbd "C-x C-f") 'ignore) ;; find-file
 (global-set-key (kbd "C-x C-s") 'ignore) ;; save-buffer
 (global-set-key (kbd "C-x C-w") 'ignore) ;; write-file
 (global-set-key (kbd "C-x k") 'ignore)   ;; kill-buffer
 
-;; Copy Paste
 ;; (global-set-key (kbd "C-z") 'undo)
 ;; (global-set-key (kbd "C-c") 'kill-ring-save) ;; Copy
 ;; (global-set-key (kbd "C-x") 'kill-region)    ;; Cut
@@ -95,8 +90,8 @@
 ;; Calculator
 (global-set-key [f7] 'calculator)
 
-;; Treemacs
-(global-set-key [f8] 'treemacs)
+;; Emms
+(global-set-key [f8] 'clover-emms-add-directory)
 
 ;; ielm
 (global-set-key [f9] 'ielm)
