@@ -16,10 +16,10 @@
 (setq package-enable-at-startup nil)
 
 (defvar clover-packages-list '(c-eldoc ag cargo cider clojure-mode company
-                                       company-solidity diff-hl disaster
-                                       ef-themes elm-mode elpher emms epresent
-                                       fasm-mode find-file-in-repository
-                                       flycheck gradle-mode haskell-mode hl-todo
+                                       diff-hl disaster ef-themes elm-mode
+                                       elpher emms epresent fasm-mode
+                                       find-file-in-repository flycheck
+                                       gradle-mode haskell-mode hl-todo
                                        hoon-mode kotlin-mode lolcat magit
                                        mastodon move-mode multiple-cursors
                                        nasm-mode nyan-mode org-view-mode
