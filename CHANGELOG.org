@@ -196,3 +196,17 @@ The long road to a better world of S-expressions is complete
 
 - Added prettier-elisp package
 - Convert clover-buffer to clover-dashboard
+
+* v1.7.0 -- 2024-07-31
+
+** Lang
+
+- Added support RIDE
+- Added support Hoon
+- Deleted support Node.js
+
+** Other
+
+- Changed lsp-mode to eglot
+- Deleted treemacs
+- Refactoring
