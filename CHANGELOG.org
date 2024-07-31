@@ -1,0 +1,198 @@
+#+TITLE: Revision history for clover
+
+* v0.1.0 -- 2020-08-14
+
+* v0.1.1 -- 2020-08-16
+
+* v0.1.2 -- 2020-08-16
+
+- Added create untitled buffer for c/c++
+- Fix create buffer for racket mode
+
+* v0.2.0 -- 2020-09-01
+
+** Lang
+
+- Added support Rust
+- Added support Python
+- Added support Node.js
+  
+** Lib
+
+- Added reverse-im
+- Added diff-hl
+- Added c-eldoc
+- Added eldoc
+- Added plan9-theme
+- Added package-lint
+
+** Other
+
+- Added truncate line
+- Added support Eshell
+- Added gdb hot key
+- Added hot key run for emacs lisp
+- Added install package and update
+- Added help page
+
+* v0.2.1 -- 2020-09-04
+
+- Added no tabs
+- Stop creating .#lock files
+
+* v0.3.0 -- 2021-01-10
+
+** Lang
+
+- Added support FASM and NASM
+- Added support Solidity
+- Added support Java and Scala
+
+** Lib
+
+- Added hl-todo
+- Added lolcat
+- Added ag
+
+* v0.4.0 -- 2021-09-01
+
+** Lang
+
+- Added support Haskell
+- Added support Zig
+- Added support Clojure
+- Added support FASM
+- Added support for smart contract languages (RIDE, ZoKrates, Vyper, Zinc)
+
+** Other
+
+- The files were structured
+- Added Pacman for Emacs
+- Added search by file and project
+- Added whitespace-mode
+- Added hotkeys for Magit
+
+* v0.4.1 -- 2022-02-15
+
+** Other
+
+- Fix search by file and project
+- Added cryptocurrency
+
+* v0.4.2 -- 2022-06-24
+
+** Lang
+
+- Added support Elm
+
+** Other
+
+- Emacs >= 28 a lot of bugs in packages that apparently won't be updated for a long time
+- Replacing cl with cl-lib
+
+* v0.5.0 -- 2022-11-02
+
+** Emacs 28.2
+
+- Most of the problems with Emacs 28.2 have been fixed.
+
+** Other
+
+- Neotree has been changed to Treemacs
+- Delete warning-minimum-level
+- Added twtxt
+- Added clover-set-transparency and clover-unset-transparency interactive commands to set window transparency
+
+* v0.5.1 -- 2022-11-02
+
+** Other
+
+- Fixed an error when Emacs first starts up
+
+* v0.6.0 -- 2023-10-23
+
+** Lang
+
+- Added support Kotlin
+
+** Other
+
+- Tab Bars enabled
+- Configuration reload function has been added
+- Changed theme
+- Redesigned the system for installing packages and updating package archives
+- Changed some shortcuts
+- Added support for system fonts and font size
+- Added display of recent files to the start buffer
+- Formatted documentation
+
+* v0.6.1 -- 2023-11-02
+
+** Lang
+
+- Added support WebAssembly Text Format
+
+** Other
+
+- Some components have been moved to a self-hosted ELPA
+
+* v1.0.0 -- 2024-01-14
+
+The long road to a better world of S-expressions is complete
+
+* v1.0.1 -- 2024-01-17
+
+** Other
+
+- Updating the start buffer
+
+* v1.0.2 -- 2024-01-17
+
+** Other
+
+- Updated default theme
+
+* v1.1.0 -- 2024-02-05
+
+** Lang
+
+- Added support OCaml
+
+** Other
+
+- Added multiple-cursors
+
+* v1.2.0 -- 2024-02-21
+
+** Lang
+
+- Added support Move
+
+** Other
+
+- Added next tab shortcut
+
+* v1.3.0 -- 2024-03-10
+
+** Other
+
+- Added emms
+- Added functions to control emms and crypto modes
+- Added ignore shortcuts
+
+* v1.4.0 -- 2024-05-12
+
+** Other
+
+- Deleted packages
+
+* v1.5.0 -- 2024-05-14
+
+** Other
+- Putting all settings for programming languages into one file
+- Minor fixes
+
+* v1.6.0 -- 2024-05-16
+
+- Added prettier-elisp package
+- Convert clover-buffer to clover-dashboard
