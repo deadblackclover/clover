@@ -28,8 +28,8 @@
                                        py-autopep8 python-mode racket-mode
                                        rainbow-delimiters reddigg reverse-im
                                        ride-mode rust-mode sbt-mode scala-mode
-                                       solidity-mode tuareg twtxt wat-mode
-                                       xah-find zig-mode))
+                                       solidity-mode tuareg twtxt ulisp-mode
+                                       wat-mode xah-find zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."
