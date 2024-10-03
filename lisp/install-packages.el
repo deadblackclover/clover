@@ -19,17 +19,16 @@
                                        diff-hl disaster ef-themes elm-mode
                                        elpher emms epresent fasm-mode
                                        find-file-in-repository flycheck
-                                       gradle-mode haskell-mode hl-todo
-                                       hoon-mode kotlin-mode lolcat magit
-                                       mastodon move-mode multiple-cursors
-                                       nasm-mode nyan-mode org-view-mode
-                                       package-lint pacmacs paredit php-mode
-                                       plan9-theme posframe prettier-elisp
-                                       py-autopep8 python-mode racket-mode
-                                       rainbow-delimiters reddigg reverse-im
-                                       ride-mode rust-mode sbt-mode scala-mode
-                                       solidity-mode tuareg twtxt ulisp-mode
-                                       wat-mode xah-find zig-mode))
+                                       forth-mode gradle-mode haskell-mode
+                                       hl-todo kotlin-mode lolcat magit mastodon
+                                       multiple-cursors nasm-mode nyan-mode
+                                       org-view-mode package-lint pacmacs
+                                       paredit php-mode plan9-theme posframe
+                                       prettier-elisp py-autopep8 python-mode
+                                       racket-mode rainbow-delimiters reddigg
+                                       reverse-im ride-mode rust-mode sbt-mode
+                                       scala-mode twtxt ulisp-mode wat-mode
+                                       xah-find zig-mode))
 
 (defun clover-install-packages ()
   "Auto install packages."

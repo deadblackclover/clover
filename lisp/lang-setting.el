@@ -137,12 +137,5 @@
 ;; Scala
 (add-hook 'scala-mode-hook 'eglot-ensure)
 
-;; Zinc
-(add-to-list 'auto-mode-alist '("\\.zn\\'" . rust-mode))
-
-;; ZoKrates, Vyper
-(add-to-list 'auto-mode-alist '("\\.zok\\'" . python-mode))
-(add-to-list 'auto-mode-alist '("\\.vy\\'" . python-mode))
-
 (provide 'lang-setting)
 ;;; lang-setting.el ends here
