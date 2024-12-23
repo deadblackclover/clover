@@ -137,5 +137,14 @@
 ;; Scala
 (add-hook 'scala-mode-hook 'eglot-ensure)
 
+;; FSharp
+
+;; Since both `fsharp-mode` and `forth-mode` are used in the configuration,
+;; we forcibly report that we use `fsharp-mode` for files of `.fs` type.
+(add-to-list 'auto-mode-alist '("\\.fs\\'" . fsharp-mode))
+
+(setq eglot-fsharp-server-install-dir nil)
+(add-hook 'fsharp-mode-hook 'eglot-ensure)
+
 (provide 'lang-setting)
 ;;; lang-setting.el ends here
