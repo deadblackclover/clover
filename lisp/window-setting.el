@@ -12,6 +12,9 @@
 (setq-default frame-title-format
               (concat "%b - Happy Hacking! - Clover " clover-version))
 
+(if (string-equal system-type "windows-nt")
+    (set-face-attribute 'default nil :height 140))
+
 ;; Set default font
 (cond ((string-equal system-type "windows-nt") ;; Microsoft Windows
        (when (member "Consolas" (font-family-list))
