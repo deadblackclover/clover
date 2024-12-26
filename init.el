@@ -8,6 +8,13 @@
 ;;; Code:
 (package-initialize)
 
+;; With GnuPG installed, the path to .emacs (especially if it is in the user's
+;; folder) may not work when checking for package signatures. The path
+;; `/emacs/gnupg` is defined in Windows 10 as `C:\emacs\gnupg`.
+;; GNU Emacs v29.4 (build 2, x86_64-w64-mingw32)
+(if (string-equal system-type "windows-nt")
+    (setq package-gnupghome-dir "/emacs/gnupg"))
+
 ;; Global Variables
 (defvar clover-version "v1.7.0")
 (defvar clover-path (file-name-directory (or load-file-name
