@@ -17,9 +17,13 @@
 (require 'wat-mode)
 
 ;; Eglot
+(defun clover-scala-language-server ()
+  "Language server depends on the system."
+  (if (string-equal system-type "windows-nt") '("~/metals/metals") '("metals")))
+
 (with-eval-after-load 'eglot
   (add-to-list 'eglot-server-programs
-               '(scala-mode . ("metals"))))
+               `(scala-mode . ,(clover-scala-language-server))))
 
 ;; C
 (defun clover-c-mode-hook ()
