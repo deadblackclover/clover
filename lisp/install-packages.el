@@ -16,16 +16,18 @@
 (setq package-enable-at-startup nil)
 
 (defvar clover-packages-list '(c-eldoc ag cargo cider clojure-mode company
-                                       diff-hl disaster ef-themes eglot-fsharp
-                                       elm-mode elpher emms epresent fasm-mode
+                                       diff-hl disaster edts ef-themes
+                                       eglot-fsharp elixir-mode elm-mode elpher
+                                       emms epresent erlstack-mode fasm-mode
                                        find-file-in-repository flycheck
-                                       forth-mode fsharp-mode gradle-mode
-                                       haskell-mode hl-todo kotlin-mode lolcat
-                                       magit mastodon multiple-cursors nasm-mode
-                                       nyan-mode org-view-mode package-lint
-                                       pacmacs paredit php-mode plan9-theme
-                                       posframe prettier-elisp py-autopep8
-                                       python-mode racket-mode
+                                       forth-mode fsharp-mode gleam-ts-mode
+                                       gradle-mode haskell-mode hl-todo
+                                       inf-elixir kotlin-mode lfe-mode lolcat
+                                       magit mastodon mix multiple-cursors
+                                       nasm-mode nyan-mode org-view-mode
+                                       package-lint pacmacs paredit php-mode
+                                       plan9-theme posframe prettier-elisp
+                                       py-autopep8 python-mode racket-mode
                                        rainbow-delimiters reddigg reverse-im
                                        ride-mode rust-mode sbt-mode scala-mode
                                        twtxt ulisp-mode wat-mode xah-find

@@ -150,5 +150,11 @@
 (setq eglot-fsharp-server-install-dir nil)
 (add-hook 'fsharp-mode-hook 'eglot-ensure)
 
+;; Elixir
+(add-hook 'elixir-mode-hook 'mix-minor-mode)
+
+;; Gleam
+(add-to-list 'auto-mode-alist '("\\.gleam\\'" . gleam-ts-mode))
+
 (provide 'lang-setting)
 ;;; lang-setting.el ends here
