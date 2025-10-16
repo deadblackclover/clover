@@ -156,5 +156,12 @@
 ;; Gleam
 (add-to-list 'auto-mode-alist '("\\.gleam\\'" . gleam-ts-mode))
 
+(defvar gleam-windows-path (concat (getenv "HOMEDRIVE") (getenv "HOMEPATH") "\\scoop\\apps\\gleam\\current\\gleam.exe"))
+
+(if (and
+     (string-equal system-type "windows-nt")
+     (file-exists-p gleam-windows-path))
+    (setq gleam-ts-gleam-executable gleam-windows-path))
+
 (provide 'lang-setting)
 ;;; lang-setting.el ends here
