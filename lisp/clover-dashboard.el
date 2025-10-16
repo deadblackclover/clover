@@ -59,7 +59,8 @@ Recent files:
 
 (defvar clover-dashboard-links
   "
-[[https://codeberg.org/deadblackclover/clover][Source code]]
+[[https://github.com/deadblackclover/clover][GitHub]]
+[[https://codeberg.org/deadblackclover/clover][Codeberg]]
 [[https://deadblackclover.net/][DEADBLACKCLOVER]]
 [[https://www.gnu.org/licenses/gpl-3.0.en.html][GNU GPL-3.0]]
 ")

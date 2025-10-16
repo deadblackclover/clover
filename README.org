@@ -5,7 +5,7 @@ Emacs for real hackers
 * Installation
 
 #+BEGIN_SRC shell
-  cd && git clone git@codeberg.org:deadblackclover/clover.git ~/.emacs.d
+  cd && git clone git@github.com:deadblackclover/clover.git ~/.emacs.d
 #+END_SRC
 
 * Update

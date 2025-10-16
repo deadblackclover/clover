@@ -15,10 +15,12 @@ games/
 export/
 elnode/
 eshell/
+server/
 my-org/
 request/
 transient/
 org-files/
+org-persist/
 eln-cache/
 semanticdb/
 auto-save-list/
