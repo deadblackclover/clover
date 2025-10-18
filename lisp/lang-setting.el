@@ -16,6 +16,15 @@
 (require 'scheme)
 (require 'wat-mode)
 
+(defvar clover-scoop-apps-path
+  (concat (getenv "HOMEDRIVE") (getenv "HOMEPATH") "\\scoop\\apps")
+  "Absolute path to Scoop files.
+Only for Windows system.")
+
+(defun clover-scoop-app-path (app)
+  "Creating a path to the APP in Scoop."
+  (concat clover-scoop-apps-path "\\" app "\\current"))
+
 ;; Eglot
 (defun clover-scala-language-server ()
   "Language server depends on the system."
@@ -150,18 +159,52 @@
 (setq eglot-fsharp-server-install-dir nil)
 (add-hook 'fsharp-mode-hook 'eglot-ensure)
 
+;; Erlang
+(defun clover-erlang-setup (erlang-path erlang-bin-path emacs-package-path)
+  "Setup for Erlang.
+ERLANG-PATH - path to Erlang.
+ERLANG-BIN-PATH - path to Erlang bin.
+EMACS-PACKAGE-PATH - path to Emacs package for Erlang."
+  (setq load-path (cons emacs-package-path load-path))
+  (setq erlang-root-dir erlang-path)
+  (setq exec-path (cons erlang-bin-path exec-path))
+  (require 'erlang-start))
+
+(defvar clover-erlang-tools-version "4.1.3"
+  "Version Erlang tools.")
+
+(defvar clover-erlang-path ""
+  "Absolute path to Erlang.")
+
+(defvar clover-erlang-bin-path ""
+  "Absolute path to Erlang binary.")
+
+(defvar clover-erlang-emacs-package-path ""
+  "Absolute path to Emacs package for Erlang.")
+
+(cond ((string-equal system-type "windows-nt")
+       (progn
+         (setq clover-erlang-path (clover-scoop-app-path "erlang")))
+         (setq clover-erlang-bin-path (concat clover-erlang-path "\\bin"))
+         (setq clover-emacs-package-path (concat clover-erlang-path "\\lib\\tools-" clover-erlang-tools-version "\\emacs"))))
+
+(if (file-directory-p clover-erlang-path)
+    (clover-erlang-setup clover-erlang-path clover-erlang-bin-path clover-erlang-emacs-package-path))
+
 ;; Elixir
 (add-hook 'elixir-mode-hook 'mix-minor-mode)
 
 ;; Gleam
 (add-to-list 'auto-mode-alist '("\\.gleam\\'" . gleam-ts-mode))
 
-(defvar gleam-windows-path (concat (getenv "HOMEDRIVE") (getenv "HOMEPATH") "\\scoop\\apps\\gleam\\current\\gleam.exe"))
+(defvar clover-gleam-path ""
+  "Absolute path to Gleam.")
 
-(if (and
-     (string-equal system-type "windows-nt")
-     (file-exists-p gleam-windows-path))
-    (setq gleam-ts-gleam-executable gleam-windows-path))
+(cond ((string-equal system-type "windows-nt")
+       (setq clover-gleam-path (concat (clover-scoop-app-path "gleam") "\\gleam.exe"))))
+
+(if (file-exists-p clover-gleam-path)
+    (setq gleam-ts-gleam-executable clover-gleam-path))
 
 (provide 'lang-setting)
 ;;; lang-setting.el ends here
